@@ -72,20 +72,31 @@
     display: none;
     opacity: 0.5;
 }
+.about {
+    position: absolute;
+    top: 50%;
+    left: 25%;
+}
 .about h2{
     font-size: 40px;
 }
 .about {
     position: absolute;
     top: 50%;
-    left: 38%;
-    
+    left: 40%;
 }
 .about h2{
     font-size: 40px;
 }
+.stars {
+    position: absolute;
+    top: 0;
+    left: 50%;
+}
 
-    
+.contact-info article {
+    padding: 40px;
+}
 }
 
 /* Medium devices (desktops, 992px and up) */
@@ -137,6 +148,11 @@
 }
 .about h2{
     font-size: 36px;
+}
+.stars {
+    position: absolute;
+    top: 10%;
+    left: 50%;
 }
 
 }
