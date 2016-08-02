@@ -990,7 +990,10 @@ ul.filter li ul{
 }
 /*************PAGE CONTACT*****************
 *******************************************/
-
+.contact-info{
+    background: url('style-images/world-map.png') no-repeat center center;
+   
+}
 .contact{
     margin-top: 40px;
     

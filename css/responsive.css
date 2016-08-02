@@ -306,6 +306,10 @@
     .contact-info article{
    padding: 20px;
 }   
+.contact-info{
+    background: url('style-images/world-map.png') no-repeat center center;
+    padding: 100px;
+}
 }
 
 
