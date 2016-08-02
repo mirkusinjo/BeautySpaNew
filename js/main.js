@@ -60,6 +60,10 @@ $(document).ready(function () {
 	$("input").click(function(){
 		$("p.more").fadeIn("slow");
 	});
+        //SHOW HIDE DISPLAY VIEW
+        $('span.fa-cog').click(function(){
+           $('.filtersSelect').toggle();
+        });
 
 
 });
