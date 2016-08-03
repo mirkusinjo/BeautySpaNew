@@ -15,10 +15,10 @@
         <link href='https://fonts.googleapis.com/css?family=Lato:400,400italic,700,700italic,900,900italic,300italic' rel='stylesheet' type='text/css'>
         <link href="css/owl.carousel.css" rel="stylesheet" type="text/css"/>
         <link href="css/owl.theme.css" rel="stylesheet" type="text/css"/>
+        <link href="css/image-switcher.css" rel="stylesheet" type="text/css"/>
         <link rel="stylesheet" href="//code.jquery.com/ui/1.12.0/themes/base/jquery-ui.css">
         <link rel="stylesheet" href="/resources/demos/style.css">
-
-        <link href="css/main.css" rel="stylesheet" type="text/css"/>
+        <link rel="stylesheet" href="css/main.css">
         <link href="css/responsive.css" rel="stylesheet" type="text/css"/>
 
         <script src="js/vendor/modernizr-2.8.3-respond-1.4.2.min.js"></script>
@@ -50,17 +50,28 @@
                         </li>
                     </ul>
                     <ul class="account list-inline">
-                        <li>
-                            <a href="MyAccount.html">
+                        <li class="dropdown">
+                            <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">
                                 MY ACCOUNT
                                 <span class="caret"></span>
                             </a>
+                            <ul class="dropdown-menu">
+                                <li><a href="#">PROFILE</a></li>
+                                <li><a href="#">ORDERS</a></li>
+                                <li><a href="#">LOG OUT</a></li>
+                            </ul>
                         </li>
-                        <li>
-                            <a href="#">
+                        <li class="dropdown">
+                            <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">
                                 LOGIN
                                 <span class="caret"></span>
                             </a>
+                            <ul class="dropdown-menu login">
+                                <li>LOGIN OR REGISTER</li>
+                                <li><a href="login.html" class="accLog">LOGIN</a></li>
+                                <li>OR</li>
+                                <li><a href="register.html" class="account">CREATE ACCOUNT</a></li>
+                            </ul>
                         </li>
                     </ul>
                 </section>
@@ -68,8 +79,8 @@
             <div class="line"></div>
 
             <!-- NAVIGATION -->
-            <div class="container">
-                <nav class="navbar navbar-default">
+            <div class="container myNav">
+                <nav class="navbar navbar-default navDrop">
                     <div class="container-fluid">
                         <!-- Brand and toggle get grouped for better mobile display -->
                         <div class="navbar-header">
@@ -87,10 +98,19 @@
                         <!-- Collect the nav links, forms, and other content for toggling -->
                         <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
 
-                            <ul class="nav navbar-nav navbar-right">
+                            <ul class="nav navbar-nav navbar-right  dropShop">
                                 <li><a href="#" class="text-uppercase">HOME</a></li>
                                 <li><a href="#" class="text-uppercase">PAGES</a></li>
-                                <li><a href="#" class="text-uppercase">SHOP</a></li>
+                                <li class="dropdown">
+                                    <a href="#" class="dropdown-toggle text-uppercase" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">
+                                        SHOP<span class="caret" style="color:#6cc513;"></span>
+                                    </a>
+                                    <ul class="dropdown-menu dropSpa">
+                                        <li><a href="#">SPA WOMEN</a></li>
+                                        <li><a href="#">SPA MEN</a></li>
+                                        <li><a href="#">SPA ALL</a></li>
+                                    </ul>
+                                </li>
                                 <li><a href="#" class="text-uppercase">GALERY</a></li>
                                 <li><a href="#" class="text-uppercase">CONTACT</a></li>
                                 <li class="shopingCart"><a href="#"><span class="fa fa-shopping-cart"></span><span class="badge">02</span></a></li>
@@ -100,68 +120,60 @@
                 </nav>
             </div>
         </header>
-
         <main>
-            <!-- SECTION 1 "ABOUT US" -->
-            <section class="aboutUs">
-                <img class="img-responsive center-block" src="img/main-candle.jpg" alt=""/>
+            <section class="logPg">
                 <div class="container">
-                    <div class="about">
-                        <h2>ABOUT US</h2>
-                        <p>HOME-ABOUT US</p>
-                    </div>
-                </div>
-            </section>
-            <!-- SECTION 2 -->
-            <section>
-                <div class="container contact-info">
                     <div class="row">
-                        <div class="col-md-6 col-sm-6">
-                            <article class="contact">
-                                <h5>CONTACT FORM</h5>
-                                <form class="form-horizontal">
-                                    <div class="form-group">                  
-                                        <input type="text" class="form-control" id="exampleInputName2" placeholder="Name">
+                        <div class="col-md-4">
+                            <article>
+                                <h3>Prijavite se</h3>
+                                <form class="html_form" data-toggle="validator" role="form">
+                                    <div class="form-group">
+                                        <label for="inputEmail" class="control-label sr-only"></label>
+                                        <input type="email" class="form-control" id="inputEmail" placeholder="Email" data-error="Email addresa je neispravna" required>
+                                        <div class="help-block with-errors"></div>
                                     </div>
-                                    <div class="form-group">          
-                                        <input type="email" class="form-control" id="exampleInputEmail2" placeholder="E-mail">                           
+                                    <div class="form-group">
+                                        <label for="inputPassword" class="control-label sr-only"></label>
+                                        <input type="password" data-minlength="" class="form-control" id="inputPassword" placeholder="Lozinka" required>
                                     </div>
-                                    <div class="form-group">          
-                                        <textarea class="form-control" rows="3" placeholder="Message"></textarea>                        
+                                    <div class="form-group">
+                                        <button type="submit" class="btn btn-primary">Potvrdi</button>
                                     </div>
-                                    <button type="submit" class="btn btn-default center-block">SEND MESSAGE</button>
                                 </form>
+                                <a href="forgot_pass.html" class="code pull-right">Zaboravili ste lozinku?</a>
                             </article>
                         </div>
-                        <div class="col-md-6 col-sm-6">
-                            <article class="contact">
-                                <ul class="list-unstyled">
-                                    <li>
-                                        <a href="#">
-                                            <img src="img/logo.png" alt="" class="img-responsive"/>
-                                        </a>
-                                        <div class="smallLine"></div>
-                                    </li>
-                                    <li>
-                                        <p class="map"><span class="fa fa-map-marker"></span>&nbsp; 28 Green Tower, Street Name New York City, USA</p>
-                                    </li>
-                                    <li>
-                                        <p class="map"><span class="fa fa-phone"></span>&nbsp; +00880-444 222 333</p>
-                                    </li>
-                                    <li>
-                                        <p class="map"><span class="fa fa-envelope"></span>&nbsp; contact@plashbeauty.com</p>
-                                    </li>
-                                </ul>
+                        <div class="col-md-7 col-md-offset-1">
+                            <article>
+                                <div class="jumbotron">
+                                    <h3>Zaštita podataka</h3> 
+                                    <p>
+                                        Donec id elit non mi porta gravida at eget metus. 
+                                        Fusce dapibus, tellus ac cursus commodo, tortor 
+                                        mauris condimentum nibh, ut fermentum massa justo sit amet risus.
+                                    </p> 
+                                    <p>
+                                        Donec id elit non mi porta gravida at eget metus. 
+                                        Fusce dapibus, tellus ac cursus commodo, tortor 
+                                        mauris condimentum nibh, ut fermentum massa justo sit amet risus.
+                                    </p> 
+                                    <ul class="list-unstyled phone">
+                                        <li>Beograd</li>
+                                        <li>Tel. 011/1234-567,</li>
+                                        <li>011/1234-568</li>
+                                        <li>Fax. 011/1234-569</li>
+                                        <li>
+                                            Email.
+                                            <a href="mailto:maxionline@delhaize.rs">maxionline@delhaize.rs</a>
+                                        </li>
+                                    </ul>
+                                </div>
                             </article>
                         </div>
                     </div>
                 </div>
             </section>
-            <section class="maps">
-                <iframe src="https://www.google.com/maps/embed?pb=!1m12!1m8!1m3!1d11276.094696131657!2d20.078804799999997!3d45.044741450000004!3m2!1i1024!2i768!4f13.1!2m1!1sgoogle+pamp!5e0!3m2!1ssr!2srs!4v1469793921453" width="100%" height="400" frameborder="0" style="border:0" allowfullscreen></iframe>
-            </section>
-
-
         </main>
 
         <!-- FOOTER -->
@@ -190,7 +202,6 @@
                         </div>
                         <div class="col-md-9">
                             <article>
-                                
                                 <form>
                                     <div class="input-group">
                                         <label for="inputMail">NEWSLETTER</label>
@@ -226,12 +237,12 @@
                                         <p class="map"><span class="fa fa-phone"></span>&nbsp; +00880-444 222 333</p>
                                     </li>
                                     <li>
-                                        <p class="map"><span class="fa fa-envelope"></span>&nbsp; contact@plashbeauty.com</p>
+                                        <p class="map"><a href="mailto:contact@plashbeauty.com"><span class="fa fa-envelope"></span>&nbsp; contact@plashbeauty.com</a></p>
                                     </li>
                                 </ul>
                             </article>
                         </div>
-                        <div class="col-md-2 col-sm-3">
+                        <div class="col-md-2">
                             <article>
                                 <h4>Main Menu</h4>
                                 <div class="smallLine"></div>
@@ -254,7 +265,7 @@
                                 </ul>
                             </article>
                         </div>
-                        <div class="col-md-2 col-sm-3">
+                        <div class="col-md-2">
                             <article>
                                 <h4>Shopping Info.</h4>
                                 <div class="smallLine"></div>
@@ -277,7 +288,7 @@
                                 </ul>
                             </article>
                         </div>
-                        <div class="col-md-2 col-sm-3">
+                        <div class="col-md-2">
                             <article>
                                 <h4>Quick Links</h4>
                                 <div class="smallLine"></div>
@@ -300,7 +311,7 @@
                                 </ul>
                             </article>
                         </div>
-                        <div class="col-md-3 col-sm-3">
+                        <div class="col-md-3">
                             <article>
                                 <h4>Payment Methods</h4>
                                 <div class="smallLine"></div>
@@ -337,7 +348,7 @@
             </section>
             <!-- SECTION 9 "rights" -->
             <section class=" rights text-center">
-                <p>2016 &REG; All Rights Reserved&CenterDot;<span>PLASH</span> Responsive Theme</p>
+                <p>2016 &REG; All Rights Reserved&FilledVerySmallSquare;<span>PLASH</span> Responsive Theme</p>
             </section>
         </footer>
 
@@ -362,7 +373,6 @@
 
         <script src="js/vendor/bootstrap.min.js"></script>
         <script src="js/owl.carousel.js" type="text/javascript"></script>
-        <script src="https://code.jquery.com/ui/1.12.0/jquery-ui.js"></script>
         <script src="js/main.js"></script>
 
         <!-- Google Analytics: change UA-XXXXX-X to be your site's ID. -->

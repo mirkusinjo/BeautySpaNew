@@ -1041,10 +1041,38 @@ ul.filter li ul{
 .tabulator li a{
     color: #ccc;
 }
-
-
-
-
+/***********MY ACCOUNT***********
+*********************************/
+.logIn{
+    padding: 20px;
+   
+}
+#email_login{
+    margin-bottom: 10px;
+   
+}
+.login-right h3{
+    font-size: 16px;
+}
+button.btnDefault:nth-child(5){
+    background: rgb(108, 197, 21) none repeat scroll;
+    padding: 2px;
+   
+}
+button.btnDefault:nth-child(2){
+     background: rgb(108, 197, 21) none repeat scroll;
+    padding: 2px;
+    width: 70%;
+    border-radius: 7px;
+}
+.jumbotron{
+    width: 70%;
+}
+.jumbotron h2{
+    color: #6cc515;
+}
+/***********REGISTRATION***********
+*********************************/
 
 
 

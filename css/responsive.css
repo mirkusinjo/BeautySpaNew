@@ -393,7 +393,31 @@
     background-color: rgba(0,0,0,0.8);
     background-size: cover;
 }
+.logIn{
+    margin-top: 130px;
+    padding: 50px;
+}
+button.btnDefault:nth-child(2) {
+    background: rgb(108, 197, 21) none repeat scroll;
+    padding: 2px;
+    width: 30%;
+    border-radius: 7px;
+}
+.registration{
+   margin-top: 25%;
+}
+.tab-pane{
+    margin-top: 20px;
+}
+.radio-inline{
+    margin-left: 10px;
+}
+.popReg{
+    margin-top: 10%;
+}
+.registration {
+    margin-top: 10%;
 }
 
 
-
+}
