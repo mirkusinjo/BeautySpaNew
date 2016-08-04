@@ -137,8 +137,11 @@
     left: 0;
     margin: auto;
     display: none;
-    background-color: rgba(0,0,0,0.8);
+    background-color: rgba(255,255,255,0.9);
     background-size: cover;
+}
+.twelve{
+    display: block;
 }
 .twelve-p{
         display: block;
@@ -374,6 +377,9 @@
     }
     .filtersSelect{
         display: block;
+    }
+    .filtersSelect article{
+        padding: 15px;
     }
     .twelve-p{
         display: block;
