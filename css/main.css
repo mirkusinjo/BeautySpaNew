@@ -354,7 +354,7 @@ main{
 .imageHover h3{
     font-family: 'Lato', sans-serif Important;
     color: white;
-   font-weight: bold;
+    font-weight: bold;
 }
 .popularProducts article:hover .imageHover{
     display: block;
@@ -1055,11 +1055,11 @@ ul.filter li ul{
 *********************************/
 .logIn{
     padding: 20px;
-   
+
 }
 #email_login{
     margin-bottom: 10px;
-   
+
 }
 .login-right h3{
     font-size: 16px;
@@ -1067,10 +1067,10 @@ ul.filter li ul{
 button.btnDefault:nth-child(5){
     background: rgb(108, 197, 21) none repeat scroll;
     padding: 2px;
-   
+
 }
 button.btnDefault:nth-child(2){
-     background: rgb(108, 197, 21) none repeat scroll;
+    background: rgb(108, 197, 21) none repeat scroll;
     padding: 2px;
     width: 70%;
     border-radius: 7px;
@@ -1084,5 +1084,45 @@ button.btnDefault:nth-child(2){
 /***********REGISTRATION***********
 *********************************/
 
+.tab-content input{
+    position: relative;
+}
+.tab-content .required{
+    position: absolute;
+    top: 10px;
+    left: 100%;
+    color: red;
+}
+.table{
+    width: 20%;
+    border: 2px solid #6cc515;
+    position: absolute;
+    top: 30%;
+    left: 70%;
+    z-index: 100;
+    display: none;
+}
+.shopingCart{
+    position: relative;
+}
+.table figure{
+    width: 50px;
+    height: 50px;
+    background: silver;
+}
+.table > thead > tr > th {
+    padding: 5px;
+    
+    vertical-align: central;
+    
+}
 
-
+.registration ul {
+    padding-left: 40px;
+}
+.table > tbody:nth-child(1) > tr:nth-child(5) > td:nth-child(1){
+    border: none;
+}
+#inputMail{
+    padding: 6px;
+}

@@ -2,7 +2,7 @@
 /* Small devices (tablets, 768px and up) */
 @media (min-width: 768px) { 
     main{
-        margin-top: 0;
+        margin-top: 20%;
     }
     .headerTop{
         padding: 10px 0;
@@ -109,6 +109,13 @@
     .filtersSelect article{
         padding: 20px;
     }
+    .register{
+        margin-top: 20px;
+    }
+    .registration{
+        margin-top: 30px;
+        
+    }
     
    .best-Sale .imageHover {
     color: #6cc515;
@@ -146,6 +153,15 @@
 .twelve-p{
         display: block;
     }
+    .registration ul {
+    padding-left: 35%;
+}
+.registration ul li a{
+    color:#6cc515;
+}
+.tab-content{
+   margin-top: 20px;
+}
 }
 
 /* Medium devices (desktops, 992px and up) */
@@ -419,11 +435,13 @@ button.btnDefault:nth-child(2) {
     margin-left: 10px;
 }
 .popReg{
-    margin-top: 10%;
+    margin-top: 11%;
 }
 .registration {
     margin-top: 10%;
 }
-
+.registration ul{
+    padding-left: 40%;
+}
 
 }

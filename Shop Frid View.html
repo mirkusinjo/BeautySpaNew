@@ -1229,10 +1229,11 @@
                             <article>
                                 <form>
                                     <div class="input-group">
-                                        <label for="inputMail">NEWSLETTER</label>
-                                        <input type="text" class="form-control" placeholder="E-mail Address">
+                                        <label for="inputEmail" class="control-label">NEWSLATER</label>
+                                        <input type="email" class="form-control" id="inputEmail" placeholder="E-mail address" data-error="Bruh, that email address is invalid" required>
+                                        <div class="help-block with-errors"></div>
                                         <span class="input-group-btn">
-                                            <button id="inputMail" class="btn btn-default" type="button"><span class="fa fa-play"></span></button>
+                                            <button id="inputMail" class="btn btn-default" type="submite"><span class="fa fa-play"></span></button>
                                         </span>
                                     </div>
                                 </form>
@@ -1399,6 +1400,7 @@
         <script src="js/vendor/bootstrap.min.js"></script>
         <script src="js/owl.carousel.js" type="text/javascript"></script>
         <script src="https://code.jquery.com/ui/1.12.0/jquery-ui.js"></script>
+        <script src="js/validator.js" type="text/javascript"></script>
         <script src="js/main.js"></script>
 
         <!-- Google Analytics: change UA-XXXXX-X to be your site's ID. -->

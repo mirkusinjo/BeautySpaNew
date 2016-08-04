@@ -64,6 +64,9 @@ $(document).ready(function () {
         $('span.fa-cog').click(function(){
            $('.filtersSelect').toggle();
         });
-
+//SHOPING CART ONCLICK
+$(".shopingCart").click(function(){
+        $(".table").toggle();
+    });
 
 });
