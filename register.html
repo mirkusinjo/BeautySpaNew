@@ -213,14 +213,16 @@
                                         <div class="col-sm-6">
                                             <div class="form-group">
                                                 <label for="inputPhone" class="control-label sr-only"></label>
-                                                <input type="tel" pattern="^[_0-9]{1,}$"  class="form-control" id="inputPhone" placeholder="Kontakt telefon" required>
+                                                <input type="tel" pattern="^[_0-9]{1,}$"  class="form-control" id="inputPhone" placeholder="Kontakt telefon" data-error="Unesite ispravan broj telefona" required>
+                                                <div class="help-block with-errors text-left"></div>
                                                 <span class="required">*</span>
                                             </div>
                                         </div>
                                         <div class="col-sm-6">
                                             <div class="form-group">
                                                 <label for="inputPhone1" class="control-label sr-only"></label>
-                                                <input type="tel" pattern="^[_0-9]{1,}$"  class="form-control" id="inputPhone1" placeholder="Drugi telefon">
+                                                <input type="tel" pattern="^[_0-9]{1,}$"  class="form-control" id="inputPhone1" placeholder="Drugi telefon" data-error="Unesite ispravan broj telefona">
+                                            <div class="help-block with-errors text-left"></div>
                                             </div>
                                         </div>
                                     </div>
@@ -228,7 +230,7 @@
                                         <div class="col-sm-1">
                                             <h4>Pol</h4>
                                         </div>
-                                        <div class="col-sm-3">
+                                        <div class="col-sm-3" style="padding: 10px;">
                                             <label class="radio-inline">                                              
                                                 <input type="radio" id="male" name="gender" value="male"> muško
                                             </label>
@@ -236,7 +238,7 @@
                                                 <input type="radio" id="female" name="gender" value="female"> žensko
                                             </label>
                                         </div>
-                                        <div class="col-sm-4 date">
+                                        <div class="col-sm-2 date">
                                             <h4 class="birth">Datum rodjenja</h4>
                                         </div>
                                         <div class="col-sm-1 dateForm">
@@ -286,7 +288,7 @@
                                         </div>
                                         <div class="col-sm-4">
                                             <div class="form-group">
-                                                <input type="password" class="form-control" id="inputPasswordConfirm" data-match="#inputPassword" data-match-error="Neispravna lozinka" placeholder="Ponovi lozinku">
+                                                <input type="password" class="form-control" id="inputPasswordConfirm" data-match="#inputPassword" data-match-error="Lozinka se ne poklapa" placeholder="Ponovi lozinku">
                                                 <div class="help-block with-errors"></div>
                                             </div>
                                         </div>
@@ -381,7 +383,8 @@
                                         <div class="col-sm-2">
                                             <div class="form-group">
                                                 <label for="inputCNumber" class="control-label sr-only"></label>
-                                                <input type="text" pattern="^[_A-z0-9]{1,}$"  class="form-control" id="inputCNumber" placeholder="Broj" required>
+                                                <input type="text" pattern="^[_0-9]{1,}$"  class="form-control" id="inputCNumber" placeholder="Broj" data-error="Unesite validaj broj" required>
+                                                <div class="help-block with-errors"></div>
                                                 <span class="required">*</span>
                                             </div>
                                         </div>
@@ -438,20 +441,21 @@
                                     <div class="row">
                                         <div class="col-sm-4 cDown">
                                             <div class="form-group">
-                                                <label for="CEmail" class="control-label sr-only"></label>
-                                                <input type="email" class="form-control" id="CEmail" placeholder="Email" data-error="Email addresa je neispravna">
+                                                <label for="Email" class="control-label sr-only"></label>
+                                                <input type="email" class="form-control" id="inputEmail" placeholder="Email" data-error="Email addresa je neispravna">
                                                 <div class="help-block with-errors"></div>
                                             </div>
                                         </div>
                                         <div class="col-sm-4 cDown">
                                             <div class="form-group">
-                                                <label for="CPassword" class="control-label sr-only"></label>
-                                                <input type="password" data-minlength="" class="form-control" id="CPassword" placeholder="Lozinka">
+                                                <label for="password" class="control-label sr-only"></label>
+                                                <input type="password" data-minlength="" class="form-control" id="inputPassword" placeholder="Lozinka" data-error="Molimo, unesite password" required>
+                                            <div class="help-block with-errors"></div>
                                             </div>
                                         </div>
                                         <div class="col-sm-4 cDown">
                                             <div class="form-group">
-                                                <input type="password" class="form-control" id="CPasswordConfirm" data-match="#CPassword" data-match-error="Neispravna lozinka" placeholder="Ponovi lozinku">
+                                                <input type="password" class="form-control" id="inputPasswordConfirm" data-match="#inputPassword" data-match-error="Lozinka se ne poklapa" placeholder="Ponovi lozinku">
                                                 <div class="help-block with-errors"></div>
                                             </div>
                                         </div>
@@ -551,7 +555,7 @@
             <section class="address">
                 <div class="container">
                     <div class="row">
-                        <div class="col-md-3 col-sm-12">
+                        <div class="col-md-3 col-sm-3">
                             <article class="contact">
                                 <ul class="list-unstyled">
                                     <li>
@@ -681,39 +685,7 @@
                 <p>2016 &REG; All Rights Reserved&FilledVerySmallSquare;<span>PLASH</span> Responsive Theme</p>
             </section>
         </footer>
-        <table class="table">
-            <tr>
-                <th>Proizvod</th>
-                <th>Cena</th>
-                <th></th>
-            </tr>
-            <tr>
-                <td>
-                    <figure></figure>
-                </td>
-                <td>500,00 din.</td>
-                <td><button>X</button></td>
-            </tr>
-            <tr>
-                <td>
-                    <figure></figure>
-                </td>
-                <td>1000,00 din.</td>
-                <td><button>X</button></td>
-            </tr>
-            <tr>
-                <td>
-                    <figure></figure>
-                </td>
-                <td>2000,00 din.</td>
-                <td><button>X</button></td>
-            </tr>
-            <tr>
-                <td></td>
-                <td></td>
-                <td><button>KUPI</button></td>
-            </tr>
-        </table>
+        tel
 
 
 

@@ -28,6 +28,32 @@ header{
 .headerTop .dropdown-menu{
     text-align: center;
 }
+.dropdown-menu{
+    padding: 10px;
+}
+.login > li:nth-child(1){
+    margin-bottom: 10px;
+}
+.login > li:nth-child(4){
+    border: 1px solid #ccc;   
+}
+.login > li:nth-child(4):hover{
+    text-decoration: none;
+    color: black;
+}
+.login a.account{
+    font-weight: bold;
+}
+.aboutUS .fa{
+        display: inline-block;
+        font: normal normal normal 14px/1 FontAwesome;
+        font-size: 20px;
+        text-rendering: auto;
+        -webkit-font-smoothing: antialiased;
+        -moz-osx-font-smoothing: grayscale;
+        color: black;
+    }
+   
 .headerTop .list-inline{
     text-align: center;
 }
@@ -97,6 +123,7 @@ main{
     top: 30%;
     font-family: 'Lato', sans-serif;
 }
+
 .item h2{
     color: #5f5f5f;
     font-size: 20px;
@@ -1076,7 +1103,7 @@ button.btnDefault:nth-child(2){
     border-radius: 7px;
 }
 .jumbotron{
-    width: 70%;
+    width: 100%;
 }
 .jumbotron h2{
     color: #6cc515;
@@ -1101,6 +1128,7 @@ button.btnDefault:nth-child(2){
     left: 70%;
     z-index: 100;
     display: none;
+    background: whitesmoke;
 }
 .shopingCart{
     position: relative;
@@ -1111,11 +1139,19 @@ button.btnDefault:nth-child(2){
     background: silver;
 }
 .table > thead > tr > th {
-    padding: 5px;
-    
+    padding: 5px;   
     vertical-align: central;
-    
 }
+.headerTop .account .login {
+    text-align: center;
+}
+
+.login a.accLog {
+    color: #fff;
+    background-color: #6bc513;
+    border: 1px solid #6bc513;
+}
+
 
 .registration ul {
     padding-left: 40px;

@@ -2,7 +2,7 @@
 /* Small devices (tablets, 768px and up) */
 @media (min-width: 768px) { 
     main{
-        margin-top: 20%;
+        margin-top: 0;
     }
     .headerTop{
         padding: 10px 0;
@@ -41,7 +41,9 @@
     .botanic{
         margin-top: 45px;
     }
-
+    .logPg{
+        margin-top: 40px;
+    }
     .plashOil{
         margin-top: 30px;
     }
@@ -97,6 +99,9 @@
     .contact-info article {
         padding: 40px;
     }
+    .view{
+        margin-top: 20px;
+    }
     .displayView .fa-th, .displayView .fa-th-list{
         display: block;
     }
@@ -114,54 +119,54 @@
     }
     .registration{
         margin-top: 30px;
-        
+
     }
-    
-   .best-Sale .imageHover {
-    color: #6cc515;
-    text-align: center;
-    position: absolute;
-    width: 100%;
-    height: 100%;
-    padding-top: 15%;
-    bottom: 0;
-    right: 0;
-    left: 0;
-    margin: auto;
-    display: none;
-    background-color: rgba(0,0,0,0.8);
-    background-size: cover;
-}
-.twelve .imageHover {
-    color: #6cc515;
-    text-align: center;
-    position: absolute;
-    width: 100%;
-    height: 100%;
-    padding-top: 40%;
-    bottom: 0;
-    right: 0;
-    left: 0;
-    margin: auto;
-    display: none;
-    background-color: rgba(255,255,255,0.9);
-    background-size: cover;
-}
-.twelve{
-    display: block;
-}
-.twelve-p{
+
+    .best-Sale .imageHover {
+        color: #6cc515;
+        text-align: center;
+        position: absolute;
+        width: 100%;
+        height: 100%;
+        padding-top: 15%;
+        bottom: 0;
+        right: 0;
+        left: 0;
+        margin: auto;
+        display: none;
+        background-color: rgba(0,0,0,0.8);
+        background-size: cover;
+    }
+    .twelve .imageHover {
+        color: #6cc515;
+        text-align: center;
+        position: absolute;
+        width: 100%;
+        height: 100%;
+        padding-top: 40%;
+        bottom: 0;
+        right: 0;
+        left: 0;
+        margin: auto;
+        display: none;
+        background-color: rgba(255,255,255,0.9);
+        background-size: cover;
+    }
+    .twelve{
+        display: block;
+    }
+    .twelve-p{
         display: block;
     }
     .registration ul {
-    padding-left: 35%;
-}
-.registration ul li a{
-    color:#6cc515;
-}
-.tab-content{
-   margin-top: 20px;
-}
+        padding-left: 35%;
+    }
+    .registration ul li a{
+        color:#6cc515;
+    }
+    .tab-content{
+        margin-top: 20px;
+    }
 }
 
 /* Medium devices (desktops, 992px and up) */
@@ -239,12 +244,35 @@
     .shopingCart{
         padding-left: 110px;
     }
-    .carousel-caption{
+    .carousel-caption{    
+        top: 30%;
+        font-family: 'Lato', sans-serif;
         text-align: left;
-        width: 40%;
     }
-    .carousel-caption p{
-        width: 60%;
+    .aboutUS .carousel-caption{
+        text-align: center;
+        color: black;
+    }
+    .shopFrid .carousel-caption{
+        text-align: center;
+        color: black;
+    }
+    .aboutUS .fa{
+        display: inline-block;
+        font: normal normal normal 14px/1 FontAwesome;
+        font-size: 30px;
+        text-rendering: auto;
+        -webkit-font-smoothing: antialiased;
+        -moz-osx-font-smoothing: grayscale;
+        color: black;
+    }
+    .Contact .carousel-caption{
+        text-align: center;
+        color: black;
+    }
+    .productDetails .carousel-caption{
+        text-align: center;
+        color: black;
     }
     .item h2{
         font-size: 60px;
@@ -401,47 +429,61 @@
         display: block;
     }
     .best-Sale .imageHover {
-    color: #6cc515;
-    text-align: center;
-    position: absolute;
-    width: 100%;
-    height: 100%;
-    padding-top: 30%;
-    bottom: 0;
-    right: 0;
-    left: 0;
-    margin: auto;
-    display: none;
-    background-color: rgba(0,0,0,0.8);
-    background-size: cover;
-}
-.logIn{
-    margin-top: 130px;
-    padding: 50px;
-}
-button.btnDefault:nth-child(2) {
-    background: rgb(108, 197, 21) none repeat scroll;
-    padding: 2px;
-    width: 30%;
-    border-radius: 7px;
-}
-.registration{
-   margin-top: 25%;
-}
-.tab-pane{
-    margin-top: 20px;
-}
-.radio-inline{
-    margin-left: 10px;
-}
-.popReg{
-    margin-top: 11%;
-}
-.registration {
-    margin-top: 10%;
-}
-.registration ul{
-    padding-left: 40%;
-}
-
+        color: #6cc515;
+        text-align: center;
+        position: absolute;
+        width: 100%;
+        height: 100%;
+        padding-top: 30%;
+        bottom: 0;
+        right: 0;
+        left: 0;
+        margin: auto;
+        display: none;
+        background-color: rgba(0,0,0,0.8);
+        background-size: cover;
+    }
+    .logPg{
+        margin-top: 200px;
+    }
+    .logIn{
+        margin-top: 130px;
+        padding: 50px;
+    }
+    button.btnDefault:nth-child(2) {
+        background: rgb(108, 197, 21) none repeat scroll;
+        padding: 2px;
+        width: 30%;
+        border-radius: 7px;
+    }
+    .registration{
+        margin-top: 25%;
+    }
+    .tab-pane{
+        margin-top: 20px;
+    }
+    .radio-inline{
+        margin-left: 10px;
+    }
+    .popReg{
+        margin-top: 12%;
+    }
+    .registration {
+        margin-top: 10%;
+    }
+    .registration ul{
+        padding-left: 40%;
+    }
+    .table{
+        width: 20%;
+        border: 2px solid #6cc515;
+        position: absolute;
+        top: 23%;
+        left: 70%;
+        z-index: 100;
+        display: none;
+    }
+    .login a.account{
+        font-weight: bold;
+    }
 }
