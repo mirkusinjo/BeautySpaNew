@@ -30,6 +30,7 @@ header{
 }
 .dropdown-menu{
     padding: 10px;
+ 
 }
 .login > li:nth-child(1){
     margin-bottom: 10px;
@@ -63,6 +64,10 @@ header{
     font-family: 'Josefin Sans', sans-serif;
     font-weight: 600;
 }
+.shopingCart > a:nth-child(1){
+    background: white;
+}
+
 .navbar ul{
     text-align: center;
 }
@@ -120,7 +125,7 @@ main{
     color: #6cc515;
 }
 .carousel-caption{
-    top: 30%;
+    top: 20%;
     font-family: 'Lato', sans-serif;
 }
 
@@ -158,6 +163,9 @@ main{
 .carousel-indicators .active{
     background-color: #6cc515;
     margin-bottom: -10px;
+}
+.carousel-inner > .item {
+    margin-top: 30px;
 }
 /************************************
            SECTION 1 "tonic"
@@ -1125,7 +1133,7 @@ button.btnDefault:nth-child(2){
     border: 2px solid #6cc515;
     position: absolute;
     top: 30%;
-    left: 70%;
+    left: 2%;
     z-index: 100;
     display: none;
     background: whitesmoke;
@@ -1161,4 +1169,27 @@ button.btnDefault:nth-child(2){
 }
 #inputMail{
     padding: 6px;
+}
+.modal-header {
+    min-height: 16.42857143px;
+    padding: 15px;
+    border-bottom: 1px solid #6cc515;
+}
+.modal-body {
+    position: relative;
+    padding: 15px;
+    border-bottom: 1px solid #6cc515;
+}
+.modal-footer > button:nth-child(1){
+    padding: 10px 20px;
+background: rgb(108, 197, 21) none repeat scroll 0% 0%;
+}
+.navbar-default .navbar-nav > .open > a, .navbar-default .navbar-nav > .open > a:hover, .navbar-default .navbar-nav > .open > a:focus {
+    
+    background-color: transparent;
+}
+.dropdown-menu > li > a:hover, .dropdown-menu > li > a:focus {
+    color: #262626;
+    text-decoration: none;
+    background: #6cc515;
 }
