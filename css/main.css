@@ -624,6 +624,7 @@ section.source p a:hover {
     line-height: 35px;
     font-size: 20px;
 }
+
 .newsletter span.fa-facebook{
     color: #3b5999;
 }
@@ -667,6 +668,11 @@ section.source p a:hover {
 }
 .newsletter form{
     padding-top: 10px;
+}
+
+.social a:hover span.fa{
+    line-height: 35px;
+    font-size: 20px !important;
 }
 .newsletter span.input-group-btn {
     padding-top: 25px;
@@ -924,10 +930,10 @@ ul.filter li ul{
 .filter-price{
     padding: 10px;
 }
-.stars{
+.stars {
     position: absolute;
-    top: 0;
-    left: 50%;
+    top: 40%;
+    left: 20%;
     color: #6bc513;
 }
 .best-Sale{
@@ -1192,4 +1198,14 @@ background: rgb(108, 197, 21) none repeat scroll 0% 0%;
     color: #262626;
     text-decoration: none;
     background: #6cc515;
+}
+.fa-heart{
+   font-size: 20px;
+}
+div.input-group:nth-child(2) > input:nth-child(1){
+    width: 50px;
+text-align: center;
+}
+.input-group-addon{
+    padding: 5px 5px;
 }

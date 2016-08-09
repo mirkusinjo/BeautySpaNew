@@ -72,5 +72,8 @@ $(document).ready(function () {
         $(this).parent().parent().hide();
 
     });
+    $('.fa-heart-o').click(function(){
+       $(this).toggleClass('fa-heart-o fa-heart'); 
+    });
 
 });

@@ -100,7 +100,17 @@
 
                             <ul class="nav navbar-nav navbar-right">
                                 <li><a href="#" class="text-uppercase">HOME</a></li>
-                                <li><a href="#" class="text-uppercase">PAGES</a></li>
+                                <li><a href="#" class="text-uppercase" data-toggle="modal" data-target="#myModal">PAGES</a></li>
+                                <li class="dropdown">
+                                    <a href="#" class="dropdown-toggle text-uppercase" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">
+                                        SHOP<span class="caret" style="color:#6cc513;"></span>
+                                    </a>
+                                    <ul class="dropdown-menu dropSpa">
+                                        <li><a href="#">SPA WOMEN</a></li>
+                                        <li><a href="#">SPA MEN</a></li>
+                                        <li><a href="#">SPA ALL</a></li>
+                                    </ul>
+                                </li>
                                 <li><a href="#" class="text-uppercase">SHOP</a></li>
                                 <li><a href="#" class="text-uppercase">GALERY</a></li>
                                 <li><a href="#" class="text-uppercase">CONTACT</a></li>
@@ -317,7 +327,7 @@
                                     </a>
                                     <span class="fa fa-refresh"></span>
                                     <button>ADD TO CART</button>
-                                    <span class="fa fa-heart-o"></span>
+                                    <a href="#"><a href="#"><span class="fa fa-heart-o"></span></a></a>
                                 </div>
                             </div>
                         </article>
@@ -333,7 +343,7 @@
                                     </a>
                                     <span class="fa fa-refresh"></span>
                                     <button>ADD TO CART</button>
-                                    <span class="fa fa-heart-o"></span>
+                                    <a href="#"><span class="fa fa-heart-o"></span></a>
                                 </div>
                             </div>
                         </article>
@@ -349,7 +359,7 @@
                                     </a>
                                     <span class="fa fa-refresh"></span>
                                     <button>ADD TO CART</button>
-                                    <span class="fa fa-heart-o"></span>
+                                    <a href="#"><span class="fa fa-heart-o"></span></a>
                                 </div>
                             </div>
                         </article>
@@ -365,7 +375,7 @@
                                     </a>
                                     <span class="fa fa-refresh"></span>
                                     <button>ADD TO CART</button>
-                                    <span class="fa fa-heart-o"></span>
+                                    <a href="#"><span class="fa fa-heart-o"></span></a>
                                 </div>
                             </div>
                         </article>
@@ -381,7 +391,7 @@
                                     </a>
                                     <span class="fa fa-refresh"></span>
                                     <button>ADD TO CART</button>
-                                    <span class="fa fa-heart-o"></span>
+                                    <a href="javascript:void(0)"><a href="#"><span class="fa fa-heart-o"></span></a></a>
                                 </div>
                             </div>
                         </article>
@@ -397,7 +407,7 @@
                                     </a>
                                     <span class="fa fa-refresh"></span>
                                     <button>ADD TO CART</button>
-                                    <span class="fa fa-heart-o"></span>
+                                    <a href="#"><span class="fa fa-heart-o"></span></a>
                                 </div>
                             </div>
                         </article>
@@ -414,7 +424,7 @@
                                 </a>
                                 <span class="fa fa-refresh"></span>
                                 <button>ADD TO CART</button>
-                                <span class="fa fa-heart-o"></span>
+                                <a href="#"><span class="fa fa-heart-o"></span></a>
                             </div>
                         </article>
                         <article>
@@ -429,7 +439,7 @@
                                     </a>
                                     <span class="fa fa-refresh"></span>
                                     <button>ADD TO CART</button>
-                                    <span class="fa fa-heart-o"></span>
+                                    <a href="#"><span class="fa fa-heart-o"></span></a>
                                 </div>
                             </div>
                         </article>
@@ -528,7 +538,7 @@
                                         <p class="map"><span class="fa fa-phone"></span>&nbsp; +00880-444 222 333</p>
                                     </li>
                                     <li>
-                                        <p class="map"><span class="fa fa-envelope"></span>&nbsp; contact@plashbeauty.com</p>
+                                        <p class="map"><span class="fa fa-envelope"></span><a href="mailto:someone@example.com?Subject=Hello%20again" target="_top">contact@plashbeauty.com</a></p>
                                     </li>
                                 </ul>
                             </article>
@@ -642,40 +652,68 @@
                 <p>2016 &REG; All Rights Reserved&CenterDot;<span>PLASH</span> Responsive Theme</p>
             </section>
         </footer>
-        <table class="table">
-            <tr>
-                <th>Proizvod</th>
-                <th>Cena</th>
-                <th></th>
-            </tr>
-            <tr>
-                <td>
-                    <figure></figure>
-                </td>
-                <td>500,00 din.</td>
-                <td><button>X</button></td>
-            </tr>
-            <tr>
-                <td>
-                    <figure></figure>
-                </td>
-                <td>1000,00 din.</td>
-                <td><button>X</button></td>
-            </tr>
-            <tr>
-                <td>
-                    <figure></figure>
-                </td>
-                <td>2000,00 din.</td>
-                <td><button>X</button></td>
-            </tr>
-            <tr>
-                <td></td>
-                <td></td>
-                <td><button>KUPI</button></td>
-            </tr>
-        </table>
-
+        <div class="cartProducts">
+            <table class="table table-responsive">
+                <tbody class="text-center">
+                    <tr> 
+                        <td>
+                            <figure>
+                                <a href="#"><img src="" alt=""/></a>  
+                            </figure>
+                        </td>
+                        <td>LOREM IPSUM</td> 
+                        <td>2497DIN</td> 
+                        <td><a href="#javascript:void(0)" class="remove">X</a></td>
+                    </tr> 
+                    <tr> 
+                        <td>
+                            <figure>
+                                <a href="#"><img src="" alt=""/></a> 
+                            </figure>
+                        </td>
+                        <td>LOREM IPSUM</td> 
+                        <td>2679DIN</td> 
+                        <td><a href="#javascript:void(0)" class="remove">X</a></td>
+                    </tr> 
+                </tbody>
+                <tfoot>
+                    <tr> 
+                        <td>TOTAL:</td> 
+                        <td></td> 
+                        <td></td> 
+                        <td><button>KUPI</button></td>
+                    </tr> 
+                </tfoot>
+            </table>
+        </div>
+<!-- Modal -->
+        <div class="modal fade" id="myModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
+            <div class="modal-dialog" role="document">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+                        <h3 class="modal-title" id="myModalLabel">Insert main title</h3>
+                    </div>
+                    <div class="modal-body">
+                        <h4>Insert second title here</h4>
+                        <p>
+                            Cras mattis consectetur purus sit amet fermentum. Cras 
+                            justo odio, dapibus ac facilisis in, egestas eget quam. 
+                            Morbi leo risus, porta ac consectetur ac, vestibulum at eros
+                        </p>
+                        <p>
+                            Cras mattis consectetur purus sit amet fermentum. Cras 
+                            justo odio, dapibus ac facilisis in, egestas eget quam. 
+                            Morbi leo risus, porta ac consectetur ac, vestibulum at eros
+                        </p>
+                    </div>
+                    <div class="modal-footer">
+                        <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- Modal end-->
 
 
 

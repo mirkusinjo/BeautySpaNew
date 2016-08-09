@@ -389,8 +389,8 @@
         margin-bottom: 30px;
     }
     .payment img:hover{
-        width: 50px;
-        height: 35px;
+        width: 40px;
+        height: 25px;
     }
     footer .address{
         padding-bottom: 80px;
@@ -411,7 +411,7 @@
         left: 70%;
     }
     .fa-refresh,  .fa-heart-o{
-        font-size: 30px;
+        font-size: 20px;
 
     }
     .twelve-p button{
@@ -484,5 +484,8 @@
     }
     .login a.account{
         font-weight: bold;
+    }
+    ul.list-unstyled:nth-child(4) > li:nth-child(5) > p:nth-child(1) > a:nth-child(1){
+        font-size: 15px;
     }
 }

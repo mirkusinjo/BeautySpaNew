@@ -20,7 +20,7 @@
         <link rel="stylesheet" href="/resources/demos/style.css">
         <link rel="stylesheet" href="css/main.css">
         <link href="css/responsive.css" rel="stylesheet" type="text/css"/>
-
+        <link href="css/UserPanel.css" rel="stylesheet" type="text/css"/>
         <script src="js/vendor/modernizr-2.8.3-respond-1.4.2.min.js"></script>
     </head>
     <body>
@@ -120,62 +120,49 @@
                 </nav>
             </div>
         </header>
-        <main>
-
-            <section class="logPg">
-                <div class="container">
-                    <div class="row">
-                        <div class="col-md-4">
-                            <article>
-                                <h3>Prijavite se</h3>
-                                <form class="html_form" data-toggle="validator" role="form">
-                                    <div class="form-group">
-                                        <label for="inputEmail" class="control-label sr-only"></label>
-                                        <input type="email" class="form-control" id="inputEmail" placeholder="Email" data-error="Email addresa je neispravna" required>
-                                        <div class="help-block with-errors"></div>
+        <main class="userPanel">
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-3">
+                        <ul class="nav nav-pills nav-stacked" id="myTabs">
+                            <li class="active"><a href="#myFile" data-toggle="pill">Moji podaci</a></li>
+                            <li><a href="#changeFile" data-toggle="pill">Izmena podataka</a></li>
+                            <li><a href="#messages" data-toggle="pill">Moje poruke</a></li>
+                            <li><a href="#myShop" data-toggle="pill">Moje kupovine</a></li>
+                        </ul>
+                    </div>
+                    <div class="col-md-9">
+                        <div class="tab-content">
+                             <h2>Moji podaci</h2>
+                            <div class="tab-pane active" id="myFile">                              
+                                <div class="row">
+                                    <div class="col-md-2 text-center userPic">
+                                        <i class="fa fa-user" aria-hidden="true"></i>   
+                                    </div>                                  
+                                    <div class="col-md-8">
+                                        <h3>Petar Petrovic</h3>
+                                        <p>Marsala Tita 24, Kragujevac</p>
+                                        <p>034/123 45 67</p>
+                                        <p>063/123 45 67</p>
+                                        <p>11.07.1954.</p>
+                                        <p class="map"><a href="mailto:someone@example.com?Subject=Hello%20again" target="_top">petarpetrovic@gmail.com</a></p>
                                     </div>
-                                    <div class="form-group">
-                                        <label for="inputPassword" class="control-label sr-only"></label>
-                                        <input type="password" data-minlength="" class="form-control" id="inputPassword" placeholder="Lozinka" required>
-                                    </div>
-                                    <div class="form-group">
-                                        <button type="submit" class="btn btn-primary">Potvrdi</button>
-                                        <a href="forgot_pass.html" class="code pull-right">Zaboravili ste lozinku?</a>  
-                                    </div>
-
-                                </form>
-
-                            </article>
-                        </div>
-                        <div class="col-md-7 col-md-offset-1">
-                            <article>
-                                <div class="jumbotron">
-                                    <h3>Zaštita podataka</h3> 
-                                    <p>
-                                        Donec id elit non mi porta gravida at eget metus. 
-                                        Fusce dapibus, tellus ac cursus commodo, tortor 
-                                        mauris condimentum nibh, ut fermentum massa justo sit amet risus.
-                                    </p> 
-                                    <p>
-                                        Donec id elit non mi porta gravida at eget metus. 
-                                        Fusce dapibus, tellus ac cursus commodo, tortor 
-                                        mauris condimentum nibh, ut fermentum massa justo sit amet risus.
-                                    </p> 
-                                    <ul class="list-unstyled phone">
-                                        <li>Beograd</li>
-                                        <li>Tel. 011/1234-567,</li>
-                                        <li>011/1234-568</li>
-                                        <li>Fax. 011/1234-569</li>
-                                        <li>
-                                            <p class="map"><a href="mailto:contact@plashbeauty.com"><span class="fa fa-envelope"></span>&nbsp; contact@plashbeauty.com</a></p>
-                                        </li>
-                                    </ul>
                                 </div>
-                            </article>
+                            </div>
+                            <div class="tab-pane" id="changeFile">
+                               2
+                            </div>
+                            <div class="tab-pane" id="messages">
+                                3
+                            </div>
+                            <div class="tab-pane" id="myShop">
+                                4
+                            </div>
                         </div>
                     </div>
                 </div>
-            </section>
+            </div>
+            
         </main>
 
         <!-- FOOTER -->
