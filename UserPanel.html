@@ -120,655 +120,662 @@
                 </nav>
             </div>
         </header>
-        <main class="userPanel">
-            <div class="container">
-                <div class="row">
-                    <div class="col-md-3">
-                        <ul class="nav nav-pills nav-stacked" id="myTabs">
-                            <li class="active"><a href="#myFile" data-toggle="pill">Moji podaci</a></li>
-                            <li><a href="#changeFile" data-toggle="pill">Izmena podataka</a></li>
-                            <li><a href="#messages" data-toggle="pill">Moje poruke</a></li>
-                            <li><a href="#myShop" data-toggle="pill">Moje kupovine</a></li>
-                        </ul>
-                    </div>
-                    <div class="col-md-9">
-                        <div class="tab-content">
-                            <h2>Moji podaci</h2>
-                            <div class="tab-pane active" id="myFile">
-
-                                <div class="row">
-                                    <div class="col-md-2 text-center userPic">
-                                        <i class="fa fa-user" aria-hidden="true"></i>   
-                                    </div>                                  
-                                    <div class="col-md-8">
-                                        <h3>Petar Petrovic</h3>
-                                        <p>Marsala Tita 24, Kragujevac</p>
-                                        <p>034/123 45 67</p>
-                                        <p>063/123 45 67</p>
-                                        <p>11.07.1954.</p>
-                                        <p class="map"><a href="mailto:someone@example.com?Subject=Hello%20again" target="_top">petarpetrovic@gmail.com</a></p>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="tab-pane" id="changeFile">
-                                <div class="tab-content">
-                                    <div role="tabpanel" class="tab-pane active tabForm" id="customer">
-                                        <form class="html_form" data-toggle="validator" role="form">
-                                            <div class="row">
-                                                <div class="col-sm-6">
-                                                    <div class="form-group">
-                                                        <label for="inputName" class="control-label sr-only"></label>
-                                                        <input type="text" pattern="^[_A-z\s]{1,}$"  class="form-control" id="inputName" placeholder="Ime" required>
-                                                        <span class="required">*</span>
-                                                    </div>
-                                                </div>
-                                                <div class="col-sm-6">
-                                                    <div class="form-group">
-                                                        <label for="inputLastName" class="control-label sr-only"></label>
-                                                        <input type="text" pattern="^[_A-z\s]{1,}$"  class="form-control" id="inputLastName" placeholder="Prezime" required>
-                                                        <span class="required">*</span>
-                                                    </div>
-                                                </div>
-                                            </div>
-                                            <div class="row">
-                                                <div class="col-sm-6">
-                                                    <div class="form-group">
-                                                        <label for="inputStreet" class="control-label sr-only"></label>
-                                                        <input type="text" pattern="^[_A-z0-9]{1,}$"  class="form-control" id="inputStreet" placeholder="Ulica" required>
-                                                        <span class="required">*</span>
-                                                    </div>
-                                                </div>
-                                                <div class="col-sm-2">
-                                                    <div class="form-group">
-                                                        <label for="inputNumber" class="control-label sr-only"></label>
-                                                        <input type="text" pattern="^[_A-z0-9]{1,}$"  class="form-control" id="inputNumber" placeholder="Broj" required>
-                                                        <span class="required">*</span>
-                                                    </div>
-                                                </div>
-                                                <div class="col-sm-4">
-                                                    <select class="form-control" required>
-                                                        <option>Grad</option>
-                                                        <option value="1" >Ada 24430</option>
-                                                        <option value="2" >Adaševci 22244</option>
-                                                        <option value="3" >Adorjan 24425</option>                                                                             
-                                                    </select>
-                                                    <span class="required">*</span>
-                                                </div>
-                                            </div>
-                                            <div class="row">
-                                                <div class="col-sm-12">
-                                                    <div class="row">
-                                                        <div class="col-sm-2">
-                                                            <div class="form-group">
-                                                                <label for="inputHouse" class="control-label sr-only"></label>
-                                                                <input type="text" pattern="^[_A-z0-9]{1,}$"  class="form-control" id="inputHouse" placeholder="Ulaz">
-                                                            </div>
-                                                        </div>
-                                                        <div class="col-sm-2">
-                                                            <div class="form-group">
-                                                                <label for="inputFloor" class="control-label sr-only"></label>
-                                                                <input type="text" pattern="^[_A-z0-9]{1,}$"  class="form-control" id="inputFloor" placeholder="Sprat">
-                                                            </div>
-                                                        </div>
-                                                        <div class="col-sm-2 ">
-                                                            <div class="form-group">
-                                                                <label for="inputFlat" class="control-label sr-only"></label>
-                                                                <input type="text" pattern="^[_0-9]{1,}$"  class="form-control" id="inputFlat" placeholder="Stan">
-                                                            </div>
-                                                        </div>
-                                                    </div>
-                                                </div>
-                                            </div>
-                                            <div class="row">
-                                                <div class="col-sm-6">
-                                                    <div class="form-group">
-                                                        <label for="inputPhone" class="control-label sr-only"></label>
-                                                        <input type="tel" pattern="^[_0-9]{1,}$"  class="form-control" id="inputPhone" placeholder="Kontakt telefon" data-error="Unesite ispravan broj telefona" required>
-                                                        <div class="help-block with-errors text-left"></div>
-                                                        <span class="required">*</span>
-                                                    </div>
-                                                </div>
-                                                <div class="col-sm-6">
-                                                    <div class="form-group">
-                                                        <label for="inputPhone1" class="control-label sr-only"></label>
-                                                        <input type="tel" pattern="^[_0-9]{1,}$"  class="form-control" id="inputPhone1" placeholder="Drugi telefon" data-error="Unesite ispravan broj telefona">
-                                                        <div class="help-block with-errors text-left"></div>
-                                                    </div>
-                                                </div>
-                                            </div>
-                                            <div class="row">
-                                                <div class="col-sm-1">
-                                                    <h4>Pol</h4>
-                                                </div>
-                                                <div class="col-sm-3" style="padding: 10px;">
-                                                    <label class="radio-inline">                                              
-                                                        <input type="radio" id="male" name="gender" value="male"> muško
-                                                    </label>
-                                                    <label class="radio-inline">
-                                                        <input type="radio" id="female" name="gender" value="female"> žensko
-                                                    </label>
-                                                </div>
-                                                <div class="col-sm-2 date">
-                                                    <h4 class="birth">Datum rodjenja</h4>
-                                                </div>
-                                                <div class="col-sm-2 dateForm">
-                                                    <select class="form-control" required>
-                                                        <option selected="selected">--</option>
-                                                        <option value="1">1</option>
-                                                        <option value="2">2</option>
-                                                        <option value="3">3</option>
-                                                        <option value="4">4</option>
-
-                                                    </select>
-                                                </div>
-                                                <div class="col-sm-2 dateForm">
-                                                    <select class="form-control" required>
-                                                        <option selected="selected">--</option>
-                                                        <option value="1">1</option>
-                                                        <option value="2">2</option>
-                                                        <option value="3">3</option>
-
-                                                    </select>
-                                                </div>
-                                                <div class="col-sm-2">
-                                                    <select class="form-control" required>
-                                                        <option selected="selected">--</option>                             
-                                                        <option value="1999" >1999</option>
-                                                        <option value="2000" >2000</option>
-                                                        <option value="2001" >2001</option>
-                                                        <option value="2002" >2002</option>
-
-                                                    </select>
-                                                </div>
-                                            </div>
-                                            <div class="row">
-                                                <div class="col-sm-2">
-                                                    <div class="form-group">
-                                                        <label for="inputEmail" class="control-label sr-only"></label>
-                                                        <input type="email" class="form-control" id="inputEmail" placeholder="Email" data-error="Email addresa je neispravna">
-                                                        <div class="help-block with-errors"></div>
-                                                    </div>
-                                                </div>
-                                                <div class="col-sm-4">
-                                                    <div class="form-group">
-                                                        <label for="inputPassword" class="control-label sr-only"></label>
-                                                        <input type="password" data-minlength="" class="form-control" id="inputPassword" placeholder="Lozinka">
-                                                        <div class="help-block with-errors"></div>
-                                                    </div>
-                                                </div>
-                                                <div class="col-sm-4">
-                                                    <div class="form-group">
-                                                        <input type="password" class="form-control" id="inputPasswordConfirm" data-match="#inputPassword" data-match-error="Lozinka se ne poklapa" placeholder="Ponovi lozinku">
-                                                        <div class="help-block with-errors"></div>
-                                                    </div>
-                                                </div>
-                                            </div>
-                                            <div class="row">
-                                                <div class="col-sm-3">
-                                                    <h5>Unesite kod sa slike</h5>
-                                                </div>
-                                                <div class="col-sm-4">
-                                                    <div class="form-group">
-                                                        <label for="inputCode" class="control-label sr-only"></label>
-                                                        <input type="text" pattern="^[_A-z0-9]{1,}$"  class="form-control" id="inputCode" placeholder="Unesite kod sa slike" required>
-                                                        <span class="required">*</span>
-                                                        <a href="#"><img src="img/code.png" alt="" class="img-responsive center-block"/></a>
-                                                    </div>
-                                                </div>
-                                                <div class="col-sm-3 col-sm-offset-2">
-                                                    <a href="#"><span class="fa fa-repeat red">&nbsp;[Drugi kod]</span></a>
-                                                </div>
-                                            </div>
-
-                                            <div class="form-group text-center">
-                                                <button type="submit" class="btn btn-primary">Potvrdi</button>
-                                            </div>
-                                        </form>
-                                    </div>
-                                    <div role="tabpanel" class="tab-pane tabForm" id="company">
-                                        <form class="html_form" data-toggle="validator" role="form">         
-                                            <div class="row">                               
-                                                <div class="col-sm-6">
-                                                    <div class="form-group">
-                                                        <label for="inputCompany" class="control-label sr-only"></label>
-                                                        <input type="text" pattern="^[_A-z0-9]{1,}$"  class="form-control" id="inputCompany" placeholder="Naziv firme" required>
-                                                        <span class="required">*</span>
-                                                    </div>
-                                                </div>
-                                                <div class="col-sm-6">
-                                                    <div class="form-group">
-                                                        <label for="inputPib" class="control-label sr-only"></label>
-                                                        <input type="text" pattern="^[_A-z0-9]{1,}$"  class="form-control" id="inputPib" placeholder="PIB" required>
-                                                        <span class="required">*</span>
-                                                    </div>
-                                                </div>
-                                            </div>
-                                            <div class="row">
-                                                <div class="col-sm-6">
-                                                    <div class="form-group">
-                                                        <label for="inputCName" class="control-label sr-only"></label>
-                                                        <input type="text" pattern="^[_A-z]{1,}$"  class="form-control" id="inputCName" placeholder="Ime" required>
-                                                        <span class="required">*</span>
-                                                    </div>
-                                                </div>
-                                                <div class="col-sm-6">
-                                                    <div class="form-group">
-                                                        <label for="inputCLast" class="control-label sr-only"></label>
-                                                        <input type="text" pattern="^[_A-z]{1,}$"  class="form-control" id="inputCLast" placeholder="Prezime" required>
-                                                        <span class="required">*</span>
-                                                    </div>
-                                                </div>
-                                            </div>
-                                            <div class="row">
-                                                <div class="col-sm-6">
-                                                    <div class="form-group">
-                                                        <label for="inputCStreet" class="control-label sr-only"></label>
-                                                        <input type="text" pattern="^[_A-z0-9]{1,}$"  class="form-control" id="inputCStreet" placeholder="Ulica" required>
-                                                        <span class="required">*</span>
-                                                    </div>
-                                                </div>
-                                                <div class="col-sm-2">
-                                                    <div class="form-group">
-                                                        <label for="inputCNumber" class="control-label sr-only"></label>
-                                                        <input type="text" pattern="^[_0-9]{1,}$"  class="form-control" id="inputCNumber" placeholder="Broj" data-error="Unesite validaj broj" required>
-                                                        <div class="help-block with-errors"></div>
-                                                        <span class="required">*</span>
-                                                    </div>
-                                                </div>
-                                                <div class="col-sm-4">
-                                                    <select class="form-control" required>
-                                                        <option>Grad</option>
-                                                        <option value="1" >Ada 24430</option>
-                                                        <option value="2" >Adaševci 22244</option>
-                                                        <option value="3" >Adorjan 24425</option>
-                                                        <option value="4" >Adrani 36203</option>                                                                            
-                                                    </select>
-                                                    <span class="required">*</span>
-                                                </div>
-                                            </div>
-                                            <div class="row">
-                                                <div class="col-sm-12">
-                                                    <div class="row">
-                                                        <div class="col-sm-2">
-                                                            <div class="form-group">
-                                                                <label for="inputCHouse" class="control-label sr-only"></label>
-                                                                <input type="text" pattern="^[_A-z0-9]{1,}$"  class="form-control" id="inputCHouse" placeholder="Ulaz">
-                                                            </div>
-                                                        </div>
-                                                        <div class="col-sm-2">
-                                                            <div class="form-group">
-                                                                <label for="inputCFloor" class="control-label sr-only"></label>
-                                                                <input type="text" pattern="^[_A-z0-9]{1,}$"  class="form-control" id="inputCFloor" placeholder="Sprat">
-                                                            </div>
-                                                        </div>
-                                                        <div class="col-sm-2 ">
-                                                            <div class="form-group">
-                                                                <label for="inputCFlat" class="control-label sr-only"></label>
-                                                                <input type="text" pattern="^[_0-9]{1,}$"  class="form-control" id="inputCFlat" placeholder="Stan">
-                                                            </div>
-                                                        </div>
-                                                    </div>
-                                                </div>
-                                            </div>
-                                            <div class="row">
-                                                <div class="col-sm-6">
-                                                    <div class="form-group">
-                                                        <label for="inputCPhone" class="control-label sr-only"></label>
-                                                        <input type="tel" pattern="^[_0-9]{1,}$"  class="form-control" id="inputCPhone" placeholder="Kontakt telefon" required>
-                                                        <span class="required">*</span>
-                                                    </div>
-                                                </div>
-                                                <div class="col-sm-6">
-                                                    <div class="form-group">
-                                                        <label for="inputCPhone1" class="control-label sr-only"></label>
-                                                        <input type="tel" pattern="^[_0-9]{1,}$"  class="form-control" id="inputCPhone1" placeholder="Drugi telefon">
-                                                    </div>
-                                                </div>
-                                            </div>
-                                            <div class="row">
-                                                <div class="col-sm-4 cDown">
-                                                    <div class="form-group">
-                                                        <label for="Email" class="control-label sr-only"></label>
-                                                        <input type="email" class="form-control" id="inputEmail" placeholder="Email" data-error="Email addresa je neispravna">
-                                                        <div class="help-block with-errors"></div>
-                                                    </div>
-                                                </div>
-                                                <div class="col-sm-4 cDown">
-                                                    <div class="form-group">
-                                                        <label for="password" class="control-label sr-only"></label>
-                                                        <input type="password" data-minlength="" class="form-control" id="inputPassword" placeholder="Lozinka" data-error="Molimo, unesite password" required>
-                                                        <div class="help-block with-errors"></div>
-                                                    </div>
-                                                </div>
-                                                <div class="col-sm-4 cDown">
-                                                    <div class="form-group">
-                                                        <input type="password" class="form-control" id="inputPasswordConfirm" data-match="#inputPassword" data-match-error="Lozinka se ne poklapa" placeholder="Ponovi lozinku">
-                                                        <div class="help-block with-errors"></div>
-                                                    </div>
-                                                </div>
-                                            </div>
-                                            <div class="row">
-                                                <div class="col-sm-3">
-                                                    <h5>Unesite kod sa slike</h5>
-                                                </div>
-                                                <div class="col-sm-4">
-                                                    <div class="form-group">
-                                                        <label for="CodeC" class="control-label sr-only"></label>
-                                                        <input type="text" pattern="^[_A-z0-9]{1,}$"  class="form-control" id="CodeC" placeholder="Unesite kod sa slike" required>
-                                                        <span class="required">*</span>
-                                                        <a href="#"><img src="img/code.png" alt="" class="img-responsive center-block"/></a>
-                                                    </div>
-                                                </div>
-                                                <div class="col-sm-3 col-sm-offset-2">
-                                                    <a href="#"><span class="fa fa-repeat red">&nbsp;[Drugi kod]</span></a>
-                                                </div>
-                                            </div>
-                                            <div class="row">
-                                                <div class="col-sm-12">
-                                                    <div class="checkbox">
-                                                        <label>
-                                                            <input type="checkbox" value="">
-                                                            Želim da primam obaveštenja o akcijama i uslugama
-                                                        </label>
-                                                    </div>
-                                                    <div class="checkbox">
-                                                        <label>
-                                                            <input type="checkbox" value="">
-                                                            Upoznat/a sam sa <a href=# style="color: #e41913;">uslovima i pravilima poslovanja</a> i prihvatam ih.
-                                                        </label>
-                                                    </div>
-                                                    <div class="checkbox">
-                                                        <label>
-                                                            <input type="checkbox" value="">
-                                                            Nakon što sam se upoznao/upoznala sa navedenim obaveštenjem i isto u potpunosti <br>
-                                                            razumeo/razumela, izjavljujem da dajem pristanak za navedenu obradu podataka o ličnosti
-                                                        </label>
-                                                    </div>
-                                                </div>
-                                            </div>
-                                            <div class="form-group text-center">
-                                                <button type="submit" class="btn btn-primary">Potvrdi</button>
-                                            </div>
-                                        </form>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="tab-pane" id="messages">
-
-
-
-
-
-
-
-
-
-                            </div>
-                            <div class="tab-pane" id="myShop">                             
-                                <div class="table table-responsive">
-                                    <table>
-                                        
-                                            <tr>
-                                                <td>
-                                                    1
-                                                </td>
-                                                <td>
-                                                    1
-                                                </td>
-                                                <td>
-                                                    1
-                                                </td>
-                                            </tr>
-                                     
-                                    </table>
-                                </div>
-                              
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-
-
-        </main>
-
-        <!-- FOOTER -->
-        <footer>
-            <!-- SECTION 7 "newsletter" -->    
-            <section class="newsletter">
+        <main>
+<!--  -->
+            <section class="user">
                 <div class="container">
                     <div class="row">
                         <div class="col-md-3">
-                            <article class="social">
-                                <ul class="list-inline list-unstyled text-center">
-                                    <li>
-                                        <a href="#"><span class="fa fa-facebook"></span></a>
-                                    </li>
-                                    <li>
-                                        <a href="#"><span class="fa fa-twitter"></span></a>
-                                    </li>
-                                    <li>
-                                        <a href="#" class="pint"><span class="fa fa-pinterest-p"></span></a>
-                                    </li>
-                                    <li>
-                                        <a href="#"><span class="fa fa-google-plus"></span></a>
-                                    </li>
-                                </ul>
-                            </article>
+                            <ul class="nav nav-pills nav-stacked" id="myTabs">
+                                <li role="presentation" class="active" ><a href="#myData1" data-toggle="pill">Moji podaci</a></li>
+                                <li role="presentation"><a href="#changeData" data-toggle="pill">Izmena podataka</a></li>
+                                <li role="presentation"><a href="#changePass" data-toggle="pill">Izmena lozinke</a></li>
+                                <li role="presentation"><a href="#messages" data-toggle="pill">Moje poruke <span class="red"> 3</span>/8</a></li>
+                                <li role="presentation"><a href="#myShop" data-toggle="pill">Moje kupovine</a></li>
+                            </ul>
                         </div>
                         <div class="col-md-9">
-                            <article>
-                                <form>
-                                    <div class="input-group">
-                                        <label for="inputMail">NEWSLETTER</label>
-                                        <input type="text" class="form-control" placeholder="E-mail Address">
-                                        <span class="input-group-btn">
-                                            <button id="inputMail" class="btn btn-default" type="button"><span class="fa fa-play"></span></button>
-                                        </span>
+                            <div class="tab-content">
+                                <div class="tab-pane active" id="myData1">
+                                    <h3>Moji podaci</h3>
+                                    <div class="row">
+                                        <div class="col-sm-2">
+                                            <p class="text-center"><span class="fa fa-user"></span></p>
+                                        </div>
+                                        <div class="col-sm-10">
+                                            <h4>Petar Petrovic</h4>
+                                            <p>Jurija Gagarina 24, Beograd</p>
+                                            <p>011/123 45 67</p>
+                                            <p>063/123 45 67</p>
+                                            <p>11.07.1954.</p>
+                                            <a href="mailto:petar.petrovic@gmail.com">petar.petrovic@gmail.com</a>
+                                        </div>
                                     </div>
-                                </form>
-                            </article>
+                                </div>
+                                <div class="tab-pane" id="changeData">
+                                    <h3>Izmena podataka</h3>
+                                    <form class="html_form" data-toggle="validator" role="form">
+                                        <div class="row">
+                                            <div class="col-sm-6">
+                                                <div class="form-group">
+                                                    <label for="inputName" class="control-label sr-only"></label>
+                                                    <input type="text" pattern="^[_A-z\s]{1,}$"  class="form-control" id="inputName" placeholder="Ime" data-error="Molimo unesite ime" required>
+                                                    <div class="help-block with-errors"></div>
+                                                </div>
+                                            </div>
+                                            <div class="col-sm-6">
+                                                <div class="form-group">
+                                                    <label for="inputLastName" class="control-label sr-only"></label>
+                                                    <input type="text" pattern="^[_A-z\s]{1,}$"  class="form-control" id="inputLastName" placeholder="Prezime" data-error="Molimo unesite prezime" required>
+                                                    <div class="help-block with-errors"></div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="row">
+                                            <div class="col-sm-6">
+                                                <div class="form-group">
+                                                    <label for="inputStreet" class="control-label sr-only"></label>
+                                                    <input type="text" pattern="^[_A-z0-9]{1,}$"  class="form-control" id="inputStreet" placeholder="Ulica" data-error="Molimo unesite naziv ulice" required>
+                                                    <div class="help-block with-errors"></div>
+                                                </div>
+                                            </div>
+                                            <div class="col-sm-2">
+                                                <div class="form-group">
+                                                    <label for="inputNumber" class="control-label sr-only"></label>
+                                                    <input type="text" pattern="^[_A-z0-9]{1,}$"  class="form-control" id="inputNumber" placeholder="Broj" data-error="Molimo unesite broj" required>
+                                                    <div class="help-block with-errors"></div>
+                                                </div>
+                                            </div>
+                                            <div class="col-sm-4">
+                                                <select class="form-control" required>
+                                                    <option selected="selected">Grad</option>
+                                                    <option value="1" >Beograd 11000</option>
+                                                    <option value="2" >Kragujevac 34000</option>
+                                                    <option value="3" >Kraljevo 36000 </option>
+                                                    <option value="4" >Niš  18000</option>
+                                                    <option value="5" >Novi Sad  21000</option>
+                                                    <option value="6" >Smederevo  11300</option>
+                                                    <option value="7" >Subotica 24000</option>
+                                                </select>
+                                            </div>
+                                        </div>
+                                        <div class="row">
+                                            <div class="col-sm-6">
+                                                <div class="form-group">
+                                                    <label for="inputPhone" class="control-label sr-only"></label>
+                                                    <input type="tel" pattern="^[_0-9]{1,}$"  class="form-control" id="inputPhone" placeholder="Telefon" data-error="Molimo unesite ispravan telefon" required>
+
+                                                    <div class="help-block with-errors"></div>
+                                                </div>
+                                            </div>
+                                            <div class="col-sm-6">
+                                                <div class="form-group">
+                                                    <label for="inputPhone1" class="control-label sr-only"></label>
+                                                    <input type="tel" pattern="^[_0-9]{1,}$"  class="form-control" id="inputPhone1" placeholder="Mobilni">
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="row">
+                                            <div class="col-sm-1">
+                                                <h4>Pol</h4>
+                                            </div>
+                                            <div class="col-sm-3">
+                                                <label class="radio-inline">
+                                                    <input type="radio" id="male" name="gender" value="male"> muško
+                                                </label>
+                                                <label class="radio-inline">
+                                                    <input type="radio" id="female" name="gender" value="female"> žensko
+                                                </label>
+                                            </div>
+                                            <div class="col-sm-4 date">
+                                                <h4 class="birth">Datum rodjenja</h4>
+                                            </div>
+                                            <div class="col-sm-1 dateForm">
+                                                <select class="form-control" required>
+                                                    <option selected="selected">--</option>
+                                                    <option value="1">1</option>
+                                                    <option value="2">2</option>
+                                                    <option value="3">3</option>
+                                                    <option value="4">4</option>
+                                                    <option value="5">5</option>
+                                                    <option value="6">6</option>
+                                                    <option value="7">7</option>
+                                                    <option value="8">8</option>
+                                                    <option value="9">9</option>
+                                                    <option value="10">10</option>
+                                                    <option value="11">11</option>
+                                                    <option value="12">12</option>
+                                                    <option value="13">13</option>
+                                                    <option value="14">14</option>
+                                                    <option value="15">15</option>
+                                                    <option value="16">16</option>
+                                                    <option value="17">17</option>
+                                                    <option value="18">18</option>
+                                                    <option value="19">19</option>
+                                                    <option value="20">20</option>
+                                                    <option value="21">21</option>
+                                                    <option value="22">22</option>
+                                                    <option value="23">23</option>
+                                                    <option value="24">24</option>
+                                                    <option value="25">25</option>
+                                                    <option value="26">26</option>
+                                                    <option value="27">27</option>
+                                                    <option value="28">28</option>
+                                                    <option value="29">29</option>
+                                                    <option value="30">30</option>
+                                                    <option value="31">31</option>
+                                                </select>
+                                            </div>
+                                            <div class="col-sm-1 dateForm">
+                                                <select class="form-control" required>
+                                                    <option selected="selected">--</option>
+                                                    <option value="1">1</option>
+                                                    <option value="2">2</option>
+                                                    <option value="3">3</option>
+                                                    <option value="4">4</option>
+                                                    <option value="5">5</option>
+                                                    <option value="6">6</option>
+                                                    <option value="7">7</option>
+                                                    <option value="8">8</option>
+                                                    <option value="9">9</option>
+                                                    <option value="10">10</option>
+                                                    <option value="11">11</option>
+                                                    <option value="12">12</option>
+                                                </select>
+                                            </div>
+                                            <div class="col-sm-2">
+                                                <select class="form-control" required>
+                                                    <option selected="selected">--</option>
+                                                    <option value="1920" >1920</option>
+                                                    <option value="1921" >1921</option>
+                                                    <option value="1922" >1922</option>
+                                                    <option value="1923" >1923</option>
+                                                    <option value="1924" >1924</option>
+                                                    <option value="1925" >1925</option>
+                                                    <option value="1926" >1926</option>
+                                                    <option value="1927" >1927</option>
+                                                    <option value="1928" >1928</option>
+                                                    <option value="1929" >1929</option>
+                                                    <option value="1930" >1930</option>
+                                                    <option value="1931" >1931</option>
+                                                    <option value="1932" >1932</option>
+                                                    <option value="1933" >1933</option>
+                                                    <option value="1934" >1934</option>
+                                                    <option value="1935" >1935</option>
+                                                    <option value="1936" >1936</option>
+                                                    <option value="1937" >1937</option>
+                                                    <option value="1938" >1938</option>
+                                                    <option value="1939" >1939</option>
+                                                    <option value="1940" >1940</option>
+                                                    <option value="1941" >1941</option>
+                                                    <option value="1942" >1942</option>
+                                                    <option value="1943" >1943</option>
+                                                    <option value="1944" >1944</option>
+                                                    <option value="1945" >1945</option>
+                                                    <option value="1946" >1946</option>
+                                                    <option value="1947" >1947</option>
+                                                    <option value="1948" >1948</option>
+                                                    <option value="1949" >1949</option>
+                                                    <option value="1950" >1950</option>
+                                                    <option value="1951" >1951</option>
+                                                    <option value="1952" >1952</option>
+                                                    <option value="1953" >1953</option>
+                                                    <option value="1954" >1954</option>
+                                                    <option value="1955" >1955</option>
+                                                    <option value="1956" >1956</option>
+                                                    <option value="1957" >1957</option>
+                                                    <option value="1958" >1958</option>
+                                                    <option value="1959" >1959</option>
+                                                    <option value="1960" >1960</option>
+                                                    <option value="1961" >1961</option>
+                                                    <option value="1962" >1962</option>
+                                                    <option value="1963" >1963</option>
+                                              
+                                                </select>
+                                            </div>
+                                        </div>
+                                        <div class="row">
+                                            <div class="col-sm-4">
+                                                <div class="form-group">
+                                                    <label for="inputEmail" class="control-label sr-only"></label>
+                                                    <input type="email" class="form-control" id="inputEmail" placeholder="Email" data-error="Email addresa je neispravna">
+                                                    <div class="help-block with-errors"></div>
+                                                </div>
+                                            </div>
+                                            <div class="col-sm-4">
+                                                <div class="form-group">
+                                                    <label for="inputPassword" class="control-label sr-only"></label>
+                                                    <input type="password" data-minlength="" class="form-control" id="inputPassword" placeholder="Lozinka">
+                                                </div>
+                                            </div>
+                                            <div class="col-sm-4">
+                                                <div class="form-group">
+                                                    <input type="password" class="form-control" id="inputPasswordConfirm" data-match="#inputPassword" data-match-error="Neispravna lozinka" placeholder="Ponovi lozinku">
+                                                    <div class="help-block with-errors"></div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="row">
+                                            <div class="col-sm-3">
+                                                <h5>Unesite kod sa slike</h5>
+                                            </div>
+                                            <div class="col-sm-4">
+                                                <div class="form-group">
+                                                    <label for="inputCode" class="control-label sr-only"></label>
+                                                    <input type="text" pattern="^[_A-z0-9]{1,}$"  class="form-control" id="inputCode" data-error="Molimo unesite ispravan kod" required>
+                                                    <div class="help-block with-errors"></div>
+                                                </div>
+                                            </div>
+                                            <div class="col-sm-3">
+                                                <a href="#"><img src="img/code.png" alt="" class="img-responsive"/></a>
+                                            </div>
+                                        </div>
+                                        <div class="form-group">
+                                            <button type="submit" class="btn btn-primary">Potvrdi</button>
+                                        </div>
+                                    </form>
+                                </div>
+                                <div class="tab-pane" id="changePass">
+                                    <h3>Izmena lozinke</h3>
+                                    <form class="html_form2">
+                                        <div class="form-group">
+                                            <label for="inputOldPassword" class="control-label">Stara lozinka</label>
+                                            <input type="password" data-minlength="" class="form-control" id="inputOldPassword" required>
+                                            <span class="requiredField">*</span>
+                                        </div>
+                                        <div class="form-group">
+                                            <label for="inputPassword" class="control-label">Nova lozinka</label>
+                                            <input type="password" data-minlength="" class="form-control" id="inputPassword" required>
+                                            <span class="requiredField">*</span>
+                                        </div>
+                                        <div class="form-group">
+                                            <label for="inputPasswordConfirm" class="control-label">Ponovi lozinku</label>
+                                            <input type="password" class="form-control" id="inputPasswordConfirm" data-match="#inputPassword" data-match-error="Neispravna lozinka" required>
+                                            <span class="requiredField">*</span>
+                                            <div class="help-block with-errors"></div>
+                                        </div>
+                                        <div class="form-group">
+                                            <button type="submit" class="btn btn-primary">Potvrdi</button>
+                                        </div>
+                                    </form>
+                                </div>
+                                <div class="tab-pane" id="messages">
+                                    <h3>Moje poruke</h3>
+                                    <p><span class="red">marko.car </span> 13.04.2013. 12:32</p>
+                                    <p>Hvala na divnom druzenju. Sve najbolje zelim. Pozdrav.</p>
+                                    <p><span class="red">marko.car </span> 13.04.2013. 13:32</p>
+                                    <p>
+                                        Postovani korisnice, ovim putem vas obavestavamo da je od 07.12. 
+                                        na akciji ARCTIC SPA BODY LOTION po jedinstvenoj ceni
+                                        od 1450 din. Iskoristite priliku kupovine ovog izuzetnog proizvoda.
+                                    </p>
+                                    <button class="reply">Reply</button>
+                                    <form class="textReply">
+                                        <textarea class="form-control" rows="3"></textarea>
+                                        <button>Submit</button>
+                                    </form>
+                                </div>
+                                <div class="tab-pane" id="myShop">
+                                    <h3>Moje kupovine</h3>
+                                    <div class="table-responsive">
+                                        <table class="table userProducts">
+                                            <thead> 
+                                                <tr> 
+                                                    <th>BR.NARUDZBINE</th>
+                                                    <th>DATUM</th> 
+                                                    <th class="text-center">PRODUKTI</th> 
+                                                    <th>STATUS</th>
+                                                    <th>DOSTAVA</th>
+                                                    <th>TOTAL</th> 
+                                                </tr>
+                                            </thead> 
+                                            <tbody> 
+                                                <tr> 
+                                                    <td>#12358</td> 
+                                                    <td>01/08/2016</td>        
+                                                    <td>
+                                                        <div>
+                                                            <a href="#" class="shopname">Facial oil</a>
+                                                            <figure>
+                                                                <a href="#"><img src="" alt=""/></a> 
+                                                            </figure>
+                                                        </div>
+                                                        <div>
+                                                            <a href="#" class="shopname">Arctic spa</a>
+                                                            <figure>
+                                                                <a href="#"><img src="" alt=""/></a> 
+                                                            </figure>
+                                                        </div>
+                                                        <div>
+                                                            <a href="#" class="shopname">Aveeno lotion</a>
+                                                            <figure>
+                                                                <a href="#"><img src="" alt=""/></a> 
+                                                            </figure>
+                                                        </div>
+                                                    </td> 
+                                                    <td>PLACENO</td> 
+                                                    <td>02/08/2016</td> 
+                                                    <td>
+                                                        <p>2500,00</p>
+                                                        <p>1300,00</p>
+                                                        <p>1350,00</p>
+                                                    </td> 
+                                                </tr> 
+                                                <tr> 
+                                                    <td>#11372</td> 
+                                                    <td>27/07/201l</td>
+                                                    <td>
+                                                        <a href="#" class="shopname">Arctic spa</a>
+                                                        <figure>
+                                                            <a href="#"><img src="" alt=""/></a> 
+                                                        </figure>
+                                                    </td> 
+                                                    <td>PLACENO</td> 
+                                                    <td>28/07/2016</td>
+                                                    <td>1300,00</td> 
+                                                </tr>
+                                                <tr> 
+                                                    <td>#11302</td> 
+                                                    <td>25/07/2016</td> 
+                                                    <td>
+                                                        <a href="#" class="shopname">Facial oil</a>
+                                                        <figure>
+                                                            <a href="#"><img src="" alt=""/></a> 
+                                                        </figure>
+                                                    </td> 
+                                                    <td>PLACENO</td> 
+                                                    <td>26/07/2016</td> 
+                                                    <td>2500,00</td> 
+                                                </tr>
+                                                <tr> 
+                                                    <td>#10761</td> 
+                                                    <td>19/06/2016</td> 
+                                                    <td>
+                                                        <div>
+                                                            <a href="#" class="shopname">Arctic spa</a>
+                                                            <figure>
+                                                                <a href="#"><img src="" alt=""/></a> 
+                                                            </figure>
+                                                        </div>
+                                                        <div>
+                                                            <a href="#" class="shopname">Aveeno lotion</a>
+                                                            <figure>
+                                                                <a href="#"><img src="" alt=""/></a> 
+                                                            </figure>
+                                                        </div>
+                                                    </td> 
+                                                    <td>PLACENO</td> 
+                                                    <td>20/06/2016</td> 
+                                                    <td>
+                                                        <p>1300,00</p>
+                                                        <p>1350,00</p>
+                                                    </td> 
+                                                </tr>
+                                                <tr> 
+                                                    <td>#10537</td> 
+                                                    <td>10/05/2016</td> 
+                                                    <td>
+                                                        <a href="#" class="shopname">Facial oil</a>
+                                                        <figure>
+                                                            <a href="#"><img src="" alt=""/></a> 
+                                                        </figure>
+                                                    </td> 
+                                                    <td>PLACENO</td> 
+                                                    <td>11/05/2016</td> 
+                                                    <td>2500,00</td> 
+                                                </tr>
+                                            </tbody> 
+                                        </table>
+                                        <button class="showHistory center-block">PRIKAZI CELU ISTORIJU</button>
+                                    </div>
+                                </div>
+                            </div>
                         </div>
                     </div>
                 </div>
+
             </section>
 
-            <!-- SECTION 8 "address" -->
-            <section class="address">
-                <div class="container">
-                    <div class="row">
-                        <div class="col-md-3">
-                            <article class="contact">
-                                <ul class="list-unstyled">
-                                    <li>
-                                        <a href="#">
-                                            <img src="img/logo.png" alt="" class="img-responsive"/>
-                                        </a>
-                                        <div class="smallLine"></div>
-                                    </li>
-                                    <li>
-                                        <p class="map"><span class="fa fa-map-marker"></span>&nbsp; 28 Green Tower, Street Name New York City, USA</p>
-                                    </li>
-                                    <li>
-                                        <p class="map"><span class="fa fa-phone"></span>&nbsp; +00880-444 222 333</p>
-                                    </li>
-                                    <li>
-                                        <p class="map"><a href="mailto:contact@plashbeauty.com"><span class="fa fa-envelope"></span>&nbsp; contact@plashbeauty.com</a></p>
-                                    </li>
-                                </ul>
-                            </article>
-                        </div>
-                        <div class="col-md-2">
-                            <article>
-                                <h4>Main Menu</h4>
-                                <div class="smallLine"></div>
-                                <ul class="list-unstyled">
-                                    <li>
-                                        <a href="#">About Us</a>
-                                    </li>
-                                    <li>
-                                        <a href="#">Our Products</a>
-                                    </li>
-                                    <li>
-                                        <a href="#">Popular Brands</a>
-                                    </li>
-                                    <li>
-                                        <a href="#">Blog</a>
-                                    </li>
-                                    <li>
-                                        <a href="#">Contact Us</a>
-                                    </li>
-                                </ul>
-                            </article>
-                        </div>
-                        <div class="col-md-2">
-                            <article>
-                                <h4>Shopping Info.</h4>
-                                <div class="smallLine"></div>
-                                <ul class="list-unstyled">
-                                    <li>
-                                        <a href="#">Service</a>
-                                    </li>
-                                    <li>
-                                        <a href="#">Delivery</a>
-                                    </li>
-                                    <li>
-                                        <a href="#">Returns</a>
-                                    </li>
-                                    <li>
-                                        <a href="#">Gift Card</a>
-                                    </li>
-                                    <li>
-                                        <a href="#">Current Discount</a>
-                                    </li>
-                                </ul>
-                            </article>
-                        </div>
-                        <div class="col-md-2">
-                            <article>
-                                <h4>Quick Links</h4>
-                                <div class="smallLine"></div>
-                                <ul class="list-unstyled">
-                                    <li>
-                                        <a href="#">Advanced Search</a>
-                                    </li>
-                                    <li>
-                                        <a href="#">Site Map</a>
-                                    </li>
-                                    <li>
-                                        <a href="#">Checkout</a>
-                                    </li>
-                                    <li>
-                                        <a href="#">Praivecy Policy</a>
-                                    </li>
-                                    <li>
-                                        <a href="#">FAQs</a>
-                                    </li>
-                                </ul>
-                            </article>
-                        </div>
-                        <div class="col-md-3">
-                            <article>
-                                <h4>Payment Methods</h4>
-                                <div class="smallLine"></div>
-                                <ul class="list-unstyled">
-                                    <li>
-                                        <p>
-                                            Connected with our social media and get update protidin
-                                        </p>
-                                    </li>
-                                    <li class="payment">
-                                        <a href="#">
-                                            <img src="img/maestro.png" alt=""/>
-                                        </a>
-                                        <a href="#">
-                                            <img src="img/paypal.png" alt=""/>
-                                        </a>
-                                        <a href="#">
-                                            <img src="img/american.png" alt=""/>
-                                        </a>
-                                    </li>
-                                    <li class="payment">
-                                        <a href="#">
-                                            <img src="img/visa.png" alt=""/>
-                                        </a>
-                                        <a href="#">
-                                            <img src="img/discover.png" alt=""/>
-                                        </a>
-                                    </li>
-                                </ul>
-                            </article>
-                        </div>
-                    </div>
+
+</main>
+
+<!-- FOOTER -->
+<footer>
+    <!-- SECTION 7 "newsletter" -->    
+    <section class="newsletter">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-3">
+                    <article class="social">
+                        <ul class="list-inline list-unstyled text-center">
+                            <li>
+                                <a href="#"><span class="fa fa-facebook"></span></a>
+                            </li>
+                            <li>
+                                <a href="#"><span class="fa fa-twitter"></span></a>
+                            </li>
+                            <li>
+                                <a href="#" class="pint"><span class="fa fa-pinterest-p"></span></a>
+                            </li>
+                            <li>
+                                <a href="#"><span class="fa fa-google-plus"></span></a>
+                            </li>
+                        </ul>
+                    </article>
                 </div>
-            </section>
-            <!-- SECTION 9 "rights" -->
-            <section class=" rights text-center">
-                <p>2016 &REG; All Rights Reserved&FilledVerySmallSquare;<span>PLASH</span> Responsive Theme</p>
-            </section>
-        </footer>
-        <div class="cartProducts">
-            <table class="table table-responsive">
-                <tbody class="text-center">
-                    <tr> 
-                        <td>
-                            <figure>
-                                <a href="#"><img src="" alt=""/></a>  
-                            </figure>
-                        </td>
-                        <td>LOREM IPSUM</td> 
-                        <td>2497DIN</td> 
-                        <td><a href="#javascript:void(0)" class="remove">X</a></td>
-                    </tr> 
-                    <tr> 
-                        <td>
-                            <figure>
-                                <a href="#"><img src="" alt=""/></a> 
-                            </figure>
-                        </td>
-                        <td>LOREM IPSUM</td> 
-                        <td>2679DIN</td> 
-                        <td><a href="#javascript:void(0)" class="remove">X</a></td>
-                    </tr> 
-                </tbody>
-                <tfoot>
-                    <tr> 
-                        <td>TOTAL:</td> 
-                        <td></td> 
-                        <td></td> 
-                        <td><button>KUPI</button></td>
-                    </tr> 
-                </tfoot>
-            </table>
-        </div>
-        <!-- Modal -->
-        <div class="modal fade" id="myModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
-            <div class="modal-dialog" role="document">
-                <div class="modal-content">
-                    <div class="modal-header">
-                        <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
-                        <h3 class="modal-title" id="myModalLabel">Insert main title</h3>
-                    </div>
-                    <div class="modal-body">
-                        <h4>Insert second title here</h4>
-                        <p>
-                            Cras mattis consectetur purus sit amet fermentum. Cras 
-                            justo odio, dapibus ac facilisis in, egestas eget quam. 
-                            Morbi leo risus, porta ac consectetur ac, vestibulum at eros
-                        </p>
-                        <p>
-                            Cras mattis consectetur purus sit amet fermentum. Cras 
-                            justo odio, dapibus ac facilisis in, egestas eget quam. 
-                            Morbi leo risus, porta ac consectetur ac, vestibulum at eros
-                        </p>
-                    </div>
-                    <div class="modal-footer">
-                        <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
-                    </div>
+                <div class="col-md-9">
+                    <article>
+                        <form>
+                            <div class="input-group">
+                                <label for="inputMail">NEWSLETTER</label>
+                                <input type="text" class="form-control" placeholder="E-mail Address">
+                                <span class="input-group-btn">
+                                    <button id="inputMail" class="btn btn-default" type="button"><span class="fa fa-play"></span></button>
+                                </span>
+                            </div>
+                        </form>
+                    </article>
                 </div>
             </div>
         </div>
-        <!-- Modal end-->
+    </section>
+
+    <!-- SECTION 8 "address" -->
+    <section class="address">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-3">
+                    <article class="contact">
+                        <ul class="list-unstyled">
+                            <li>
+                                <a href="#">
+                                    <img src="img/logo.png" alt="" class="img-responsive"/>
+                                </a>
+                                <div class="smallLine"></div>
+                            </li>
+                            <li>
+                                <p class="map"><span class="fa fa-map-marker"></span>&nbsp; 28 Green Tower, Street Name New York City, USA</p>
+                            </li>
+                            <li>
+                                <p class="map"><span class="fa fa-phone"></span>&nbsp; +00880-444 222 333</p>
+                            </li>
+                            <li>
+                                <p class="map"><a href="mailto:contact@plashbeauty.com"><span class="fa fa-envelope"></span>&nbsp; contact@plashbeauty.com</a></p>
+                            </li>
+                        </ul>
+                    </article>
+                </div>
+                <div class="col-md-2">
+                    <article>
+                        <h4>Main Menu</h4>
+                        <div class="smallLine"></div>
+                        <ul class="list-unstyled">
+                            <li>
+                                <a href="#">About Us</a>
+                            </li>
+                            <li>
+                                <a href="#">Our Products</a>
+                            </li>
+                            <li>
+                                <a href="#">Popular Brands</a>
+                            </li>
+                            <li>
+                                <a href="#">Blog</a>
+                            </li>
+                            <li>
+                                <a href="#">Contact Us</a>
+                            </li>
+                        </ul>
+                    </article>
+                </div>
+                <div class="col-md-2">
+                    <article>
+                        <h4>Shopping Info.</h4>
+                        <div class="smallLine"></div>
+                        <ul class="list-unstyled">
+                            <li>
+                                <a href="#">Service</a>
+                            </li>
+                            <li>
+                                <a href="#">Delivery</a>
+                            </li>
+                            <li>
+                                <a href="#">Returns</a>
+                            </li>
+                            <li>
+                                <a href="#">Gift Card</a>
+                            </li>
+                            <li>
+                                <a href="#">Current Discount</a>
+                            </li>
+                        </ul>
+                    </article>
+                </div>
+                <div class="col-md-2">
+                    <article>
+                        <h4>Quick Links</h4>
+                        <div class="smallLine"></div>
+                        <ul class="list-unstyled">
+                            <li>
+                                <a href="#">Advanced Search</a>
+                            </li>
+                            <li>
+                                <a href="#">Site Map</a>
+                            </li>
+                            <li>
+                                <a href="#">Checkout</a>
+                            </li>
+                            <li>
+                                <a href="#">Praivecy Policy</a>
+                            </li>
+                            <li>
+                                <a href="#">FAQs</a>
+                            </li>
+                        </ul>
+                    </article>
+                </div>
+                <div class="col-md-3">
+                    <article>
+                        <h4>Payment Methods</h4>
+                        <div class="smallLine"></div>
+                        <ul class="list-unstyled">
+                            <li>
+                                <p>
+                                    Connected with our social media and get update protidin
+                                </p>
+                            </li>
+                            <li class="payment">
+                                <a href="#">
+                                    <img src="img/maestro.png" alt=""/>
+                                </a>
+                                <a href="#">
+                                    <img src="img/paypal.png" alt=""/>
+                                </a>
+                                <a href="#">
+                                    <img src="img/american.png" alt=""/>
+                                </a>
+                            </li>
+                            <li class="payment">
+                                <a href="#">
+                                    <img src="img/visa.png" alt=""/>
+                                </a>
+                                <a href="#">
+                                    <img src="img/discover.png" alt=""/>
+                                </a>
+                            </li>
+                        </ul>
+                    </article>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- SECTION 9 "rights" -->
+    <section class=" rights text-center">
+        <p>2016 &REG; All Rights Reserved&FilledVerySmallSquare;<span>PLASH</span> Responsive Theme</p>
+    </section>
+</footer>
+<div class="cartProducts">
+    <table class="table table-responsive">
+        <tbody class="text-center">
+            <tr> 
+                <td>
+                    <figure>
+                        <a href="#"><img src="" alt=""/></a>  
+                    </figure>
+                </td>
+                <td>LOREM IPSUM</td> 
+                <td>2497DIN</td> 
+                <td><a href="#javascript:void(0)" class="remove">X</a></td>
+            </tr> 
+            <tr> 
+                <td>
+                    <figure>
+                        <a href="#"><img src="" alt=""/></a> 
+                    </figure>
+                </td>
+                <td>LOREM IPSUM</td> 
+                <td>2679DIN</td> 
+                <td><a href="#javascript:void(0)" class="remove">X</a></td>
+            </tr> 
+        </tbody>
+        <tfoot>
+            <tr> 
+                <td>TOTAL:</td> 
+                <td></td> 
+                <td></td> 
+                <td><button>KUPI</button></td>
+            </tr> 
+        </tfoot>
+    </table>
+</div>
+<!-- Modal -->
+<div class="modal fade" id="myModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
+    <div class="modal-dialog" role="document">
+        <div class="modal-content">
+            <div class="modal-header">
+                <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+                <h3 class="modal-title" id="myModalLabel">Insert main title</h3>
+            </div>
+            <div class="modal-body">
+                <h4>Insert second title here</h4>
+                <p>
+                    Cras mattis consectetur purus sit amet fermentum. Cras 
+                    justo odio, dapibus ac facilisis in, egestas eget quam. 
+                    Morbi leo risus, porta ac consectetur ac, vestibulum at eros
+                </p>
+                <p>
+                    Cras mattis consectetur purus sit amet fermentum. Cras 
+                    justo odio, dapibus ac facilisis in, egestas eget quam. 
+                    Morbi leo risus, porta ac consectetur ac, vestibulum at eros
+                </p>
+            </div>
+            <div class="modal-footer">
+                <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+            </div>
+        </div>
+    </div>
+</div>
+<!-- Modal end-->
 
 
 
@@ -785,30 +792,30 @@
 
 
 
-        <script src="js/jquery-3.0.0.min.js" type="text/javascript"></script>
-        <script>window.jQuery || document.write('<script src="js/vendor/jquery-1.11.2.js"><\/script>')</script>
+<script src="js/jquery-3.0.0.min.js" type="text/javascript"></script>
+<script>window.jQuery || document.write('<script src="js/vendor/jquery-1.11.2.js"><\/script>')</script>
 
-        <script src="js/vendor/bootstrap.min.js"></script>
-        <script src="js/owl.carousel.js" type="text/javascript"></script>
-        <script src="js/validator.js" type="text/javascript"></script>
-        <script src="js/main.js"></script>
+<script src="js/vendor/bootstrap.min.js"></script>
+<script src="js/owl.carousel.js" type="text/javascript"></script>
+<script src="js/validator.js" type="text/javascript"></script>
+<script src="js/main.js"></script>
 
-        <!-- Google Analytics: change UA-XXXXX-X to be your site's ID. -->
-        <script>
-            (function (b, o, i, l, e, r) {
-                b.GoogleAnalyticsObject = l;
-                b[l] || (b[l] =
-                        function () {
-                            (b[l].q = b[l].q || []).push(arguments)
-                        });
-                b[l].l = +new Date;
-                e = o.createElement(i);
-                r = o.getElementsByTagName(i)[0];
-                e.src = '//www.google-analytics.com/analytics.js';
-                r.parentNode.insertBefore(e, r)
-            }(window, document, 'script', 'ga'));
-            ga('create', 'UA-XXXXX-X', 'auto');
-            ga('send', 'pageview');
-        </script>
-    </body>
+<!-- Google Analytics: change UA-XXXXX-X to be your site's ID. -->
+<script>
+    (function (b, o, i, l, e, r) {
+        b.GoogleAnalyticsObject = l;
+        b[l] || (b[l] =
+                function () {
+                    (b[l].q = b[l].q || []).push(arguments)
+                });
+        b[l].l = +new Date;
+        e = o.createElement(i);
+        r = o.getElementsByTagName(i)[0];
+        e.src = '//www.google-analytics.com/analytics.js';
+        r.parentNode.insertBefore(e, r)
+    }(window, document, 'script', 'ga'));
+    ga('create', 'UA-XXXXX-X', 'auto');
+    ga('send', 'pageview');
+</script>
+</body>
 </html>

@@ -75,5 +75,27 @@ $(document).ready(function () {
     $('.fa-heart-o').click(function(){
        $(this).toggleClass('fa-heart-o fa-heart'); 
     });
+    
+    //userPanel
+    //show text area
+    $('button.reply').click(function () {
+        $('form.textReply').show();
+    });
+    
+    //show-hide product history
+    $('.showHistory').click(function () {
+        var txt = $(this).text();
+        $('.userProducts tbody tr:first-of-type + tr').nextAll('tr').toggle();
+        if (txt == 'PRIKAZI CELU ISTORIJU') {
+            $(this).text('SAKRIJ ISTORIJU');
+        } else {
+            $(this).text('PRIKAZI CELU ISTORIJU');
+        }
+    });
+    //userPage end
 
+    //form
+    $('.html_form').validator();
+    $('.html_form2').validator();
 });
+
