@@ -133,8 +133,9 @@
                     </div>
                     <div class="col-md-9">
                         <div class="tab-content">
-                             <h2>Moji podaci</h2>
-                            <div class="tab-pane active" id="myFile">                              
+                            <h2>Moji podaci</h2>
+                            <div class="tab-pane active" id="myFile">
+
                                 <div class="row">
                                     <div class="col-md-2 text-center userPic">
                                         <i class="fa fa-user" aria-hidden="true"></i>   
@@ -150,19 +151,385 @@
                                 </div>
                             </div>
                             <div class="tab-pane" id="changeFile">
-                               2
+                                <div class="tab-content">
+                                    <div role="tabpanel" class="tab-pane active tabForm" id="customer">
+                                        <form class="html_form" data-toggle="validator" role="form">
+                                            <div class="row">
+                                                <div class="col-sm-6">
+                                                    <div class="form-group">
+                                                        <label for="inputName" class="control-label sr-only"></label>
+                                                        <input type="text" pattern="^[_A-z\s]{1,}$"  class="form-control" id="inputName" placeholder="Ime" required>
+                                                        <span class="required">*</span>
+                                                    </div>
+                                                </div>
+                                                <div class="col-sm-6">
+                                                    <div class="form-group">
+                                                        <label for="inputLastName" class="control-label sr-only"></label>
+                                                        <input type="text" pattern="^[_A-z\s]{1,}$"  class="form-control" id="inputLastName" placeholder="Prezime" required>
+                                                        <span class="required">*</span>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="row">
+                                                <div class="col-sm-6">
+                                                    <div class="form-group">
+                                                        <label for="inputStreet" class="control-label sr-only"></label>
+                                                        <input type="text" pattern="^[_A-z0-9]{1,}$"  class="form-control" id="inputStreet" placeholder="Ulica" required>
+                                                        <span class="required">*</span>
+                                                    </div>
+                                                </div>
+                                                <div class="col-sm-2">
+                                                    <div class="form-group">
+                                                        <label for="inputNumber" class="control-label sr-only"></label>
+                                                        <input type="text" pattern="^[_A-z0-9]{1,}$"  class="form-control" id="inputNumber" placeholder="Broj" required>
+                                                        <span class="required">*</span>
+                                                    </div>
+                                                </div>
+                                                <div class="col-sm-4">
+                                                    <select class="form-control" required>
+                                                        <option>Grad</option>
+                                                        <option value="1" >Ada 24430</option>
+                                                        <option value="2" >Adaševci 22244</option>
+                                                        <option value="3" >Adorjan 24425</option>                                                                             
+                                                    </select>
+                                                    <span class="required">*</span>
+                                                </div>
+                                            </div>
+                                            <div class="row">
+                                                <div class="col-sm-12">
+                                                    <div class="row">
+                                                        <div class="col-sm-2">
+                                                            <div class="form-group">
+                                                                <label for="inputHouse" class="control-label sr-only"></label>
+                                                                <input type="text" pattern="^[_A-z0-9]{1,}$"  class="form-control" id="inputHouse" placeholder="Ulaz">
+                                                            </div>
+                                                        </div>
+                                                        <div class="col-sm-2">
+                                                            <div class="form-group">
+                                                                <label for="inputFloor" class="control-label sr-only"></label>
+                                                                <input type="text" pattern="^[_A-z0-9]{1,}$"  class="form-control" id="inputFloor" placeholder="Sprat">
+                                                            </div>
+                                                        </div>
+                                                        <div class="col-sm-2 ">
+                                                            <div class="form-group">
+                                                                <label for="inputFlat" class="control-label sr-only"></label>
+                                                                <input type="text" pattern="^[_0-9]{1,}$"  class="form-control" id="inputFlat" placeholder="Stan">
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="row">
+                                                <div class="col-sm-6">
+                                                    <div class="form-group">
+                                                        <label for="inputPhone" class="control-label sr-only"></label>
+                                                        <input type="tel" pattern="^[_0-9]{1,}$"  class="form-control" id="inputPhone" placeholder="Kontakt telefon" data-error="Unesite ispravan broj telefona" required>
+                                                        <div class="help-block with-errors text-left"></div>
+                                                        <span class="required">*</span>
+                                                    </div>
+                                                </div>
+                                                <div class="col-sm-6">
+                                                    <div class="form-group">
+                                                        <label for="inputPhone1" class="control-label sr-only"></label>
+                                                        <input type="tel" pattern="^[_0-9]{1,}$"  class="form-control" id="inputPhone1" placeholder="Drugi telefon" data-error="Unesite ispravan broj telefona">
+                                                        <div class="help-block with-errors text-left"></div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="row">
+                                                <div class="col-sm-1">
+                                                    <h4>Pol</h4>
+                                                </div>
+                                                <div class="col-sm-3" style="padding: 10px;">
+                                                    <label class="radio-inline">                                              
+                                                        <input type="radio" id="male" name="gender" value="male"> muško
+                                                    </label>
+                                                    <label class="radio-inline">
+                                                        <input type="radio" id="female" name="gender" value="female"> žensko
+                                                    </label>
+                                                </div>
+                                                <div class="col-sm-2 date">
+                                                    <h4 class="birth">Datum rodjenja</h4>
+                                                </div>
+                                                <div class="col-sm-2 dateForm">
+                                                    <select class="form-control" required>
+                                                        <option selected="selected">--</option>
+                                                        <option value="1">1</option>
+                                                        <option value="2">2</option>
+                                                        <option value="3">3</option>
+                                                        <option value="4">4</option>
+
+                                                    </select>
+                                                </div>
+                                                <div class="col-sm-2 dateForm">
+                                                    <select class="form-control" required>
+                                                        <option selected="selected">--</option>
+                                                        <option value="1">1</option>
+                                                        <option value="2">2</option>
+                                                        <option value="3">3</option>
+
+                                                    </select>
+                                                </div>
+                                                <div class="col-sm-2">
+                                                    <select class="form-control" required>
+                                                        <option selected="selected">--</option>                             
+                                                        <option value="1999" >1999</option>
+                                                        <option value="2000" >2000</option>
+                                                        <option value="2001" >2001</option>
+                                                        <option value="2002" >2002</option>
+
+                                                    </select>
+                                                </div>
+                                            </div>
+                                            <div class="row">
+                                                <div class="col-sm-2">
+                                                    <div class="form-group">
+                                                        <label for="inputEmail" class="control-label sr-only"></label>
+                                                        <input type="email" class="form-control" id="inputEmail" placeholder="Email" data-error="Email addresa je neispravna">
+                                                        <div class="help-block with-errors"></div>
+                                                    </div>
+                                                </div>
+                                                <div class="col-sm-4">
+                                                    <div class="form-group">
+                                                        <label for="inputPassword" class="control-label sr-only"></label>
+                                                        <input type="password" data-minlength="" class="form-control" id="inputPassword" placeholder="Lozinka">
+                                                        <div class="help-block with-errors"></div>
+                                                    </div>
+                                                </div>
+                                                <div class="col-sm-4">
+                                                    <div class="form-group">
+                                                        <input type="password" class="form-control" id="inputPasswordConfirm" data-match="#inputPassword" data-match-error="Lozinka se ne poklapa" placeholder="Ponovi lozinku">
+                                                        <div class="help-block with-errors"></div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="row">
+                                                <div class="col-sm-3">
+                                                    <h5>Unesite kod sa slike</h5>
+                                                </div>
+                                                <div class="col-sm-4">
+                                                    <div class="form-group">
+                                                        <label for="inputCode" class="control-label sr-only"></label>
+                                                        <input type="text" pattern="^[_A-z0-9]{1,}$"  class="form-control" id="inputCode" placeholder="Unesite kod sa slike" required>
+                                                        <span class="required">*</span>
+                                                        <a href="#"><img src="img/code.png" alt="" class="img-responsive center-block"/></a>
+                                                    </div>
+                                                </div>
+                                                <div class="col-sm-3 col-sm-offset-2">
+                                                    <a href="#"><span class="fa fa-repeat red">&nbsp;[Drugi kod]</span></a>
+                                                </div>
+                                            </div>
+
+                                            <div class="form-group text-center">
+                                                <button type="submit" class="btn btn-primary">Potvrdi</button>
+                                            </div>
+                                        </form>
+                                    </div>
+                                    <div role="tabpanel" class="tab-pane tabForm" id="company">
+                                        <form class="html_form" data-toggle="validator" role="form">         
+                                            <div class="row">                               
+                                                <div class="col-sm-6">
+                                                    <div class="form-group">
+                                                        <label for="inputCompany" class="control-label sr-only"></label>
+                                                        <input type="text" pattern="^[_A-z0-9]{1,}$"  class="form-control" id="inputCompany" placeholder="Naziv firme" required>
+                                                        <span class="required">*</span>
+                                                    </div>
+                                                </div>
+                                                <div class="col-sm-6">
+                                                    <div class="form-group">
+                                                        <label for="inputPib" class="control-label sr-only"></label>
+                                                        <input type="text" pattern="^[_A-z0-9]{1,}$"  class="form-control" id="inputPib" placeholder="PIB" required>
+                                                        <span class="required">*</span>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="row">
+                                                <div class="col-sm-6">
+                                                    <div class="form-group">
+                                                        <label for="inputCName" class="control-label sr-only"></label>
+                                                        <input type="text" pattern="^[_A-z]{1,}$"  class="form-control" id="inputCName" placeholder="Ime" required>
+                                                        <span class="required">*</span>
+                                                    </div>
+                                                </div>
+                                                <div class="col-sm-6">
+                                                    <div class="form-group">
+                                                        <label for="inputCLast" class="control-label sr-only"></label>
+                                                        <input type="text" pattern="^[_A-z]{1,}$"  class="form-control" id="inputCLast" placeholder="Prezime" required>
+                                                        <span class="required">*</span>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="row">
+                                                <div class="col-sm-6">
+                                                    <div class="form-group">
+                                                        <label for="inputCStreet" class="control-label sr-only"></label>
+                                                        <input type="text" pattern="^[_A-z0-9]{1,}$"  class="form-control" id="inputCStreet" placeholder="Ulica" required>
+                                                        <span class="required">*</span>
+                                                    </div>
+                                                </div>
+                                                <div class="col-sm-2">
+                                                    <div class="form-group">
+                                                        <label for="inputCNumber" class="control-label sr-only"></label>
+                                                        <input type="text" pattern="^[_0-9]{1,}$"  class="form-control" id="inputCNumber" placeholder="Broj" data-error="Unesite validaj broj" required>
+                                                        <div class="help-block with-errors"></div>
+                                                        <span class="required">*</span>
+                                                    </div>
+                                                </div>
+                                                <div class="col-sm-4">
+                                                    <select class="form-control" required>
+                                                        <option>Grad</option>
+                                                        <option value="1" >Ada 24430</option>
+                                                        <option value="2" >Adaševci 22244</option>
+                                                        <option value="3" >Adorjan 24425</option>
+                                                        <option value="4" >Adrani 36203</option>                                                                            
+                                                    </select>
+                                                    <span class="required">*</span>
+                                                </div>
+                                            </div>
+                                            <div class="row">
+                                                <div class="col-sm-12">
+                                                    <div class="row">
+                                                        <div class="col-sm-2">
+                                                            <div class="form-group">
+                                                                <label for="inputCHouse" class="control-label sr-only"></label>
+                                                                <input type="text" pattern="^[_A-z0-9]{1,}$"  class="form-control" id="inputCHouse" placeholder="Ulaz">
+                                                            </div>
+                                                        </div>
+                                                        <div class="col-sm-2">
+                                                            <div class="form-group">
+                                                                <label for="inputCFloor" class="control-label sr-only"></label>
+                                                                <input type="text" pattern="^[_A-z0-9]{1,}$"  class="form-control" id="inputCFloor" placeholder="Sprat">
+                                                            </div>
+                                                        </div>
+                                                        <div class="col-sm-2 ">
+                                                            <div class="form-group">
+                                                                <label for="inputCFlat" class="control-label sr-only"></label>
+                                                                <input type="text" pattern="^[_0-9]{1,}$"  class="form-control" id="inputCFlat" placeholder="Stan">
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="row">
+                                                <div class="col-sm-6">
+                                                    <div class="form-group">
+                                                        <label for="inputCPhone" class="control-label sr-only"></label>
+                                                        <input type="tel" pattern="^[_0-9]{1,}$"  class="form-control" id="inputCPhone" placeholder="Kontakt telefon" required>
+                                                        <span class="required">*</span>
+                                                    </div>
+                                                </div>
+                                                <div class="col-sm-6">
+                                                    <div class="form-group">
+                                                        <label for="inputCPhone1" class="control-label sr-only"></label>
+                                                        <input type="tel" pattern="^[_0-9]{1,}$"  class="form-control" id="inputCPhone1" placeholder="Drugi telefon">
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="row">
+                                                <div class="col-sm-4 cDown">
+                                                    <div class="form-group">
+                                                        <label for="Email" class="control-label sr-only"></label>
+                                                        <input type="email" class="form-control" id="inputEmail" placeholder="Email" data-error="Email addresa je neispravna">
+                                                        <div class="help-block with-errors"></div>
+                                                    </div>
+                                                </div>
+                                                <div class="col-sm-4 cDown">
+                                                    <div class="form-group">
+                                                        <label for="password" class="control-label sr-only"></label>
+                                                        <input type="password" data-minlength="" class="form-control" id="inputPassword" placeholder="Lozinka" data-error="Molimo, unesite password" required>
+                                                        <div class="help-block with-errors"></div>
+                                                    </div>
+                                                </div>
+                                                <div class="col-sm-4 cDown">
+                                                    <div class="form-group">
+                                                        <input type="password" class="form-control" id="inputPasswordConfirm" data-match="#inputPassword" data-match-error="Lozinka se ne poklapa" placeholder="Ponovi lozinku">
+                                                        <div class="help-block with-errors"></div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="row">
+                                                <div class="col-sm-3">
+                                                    <h5>Unesite kod sa slike</h5>
+                                                </div>
+                                                <div class="col-sm-4">
+                                                    <div class="form-group">
+                                                        <label for="CodeC" class="control-label sr-only"></label>
+                                                        <input type="text" pattern="^[_A-z0-9]{1,}$"  class="form-control" id="CodeC" placeholder="Unesite kod sa slike" required>
+                                                        <span class="required">*</span>
+                                                        <a href="#"><img src="img/code.png" alt="" class="img-responsive center-block"/></a>
+                                                    </div>
+                                                </div>
+                                                <div class="col-sm-3 col-sm-offset-2">
+                                                    <a href="#"><span class="fa fa-repeat red">&nbsp;[Drugi kod]</span></a>
+                                                </div>
+                                            </div>
+                                            <div class="row">
+                                                <div class="col-sm-12">
+                                                    <div class="checkbox">
+                                                        <label>
+                                                            <input type="checkbox" value="">
+                                                            Želim da primam obaveštenja o akcijama i uslugama
+                                                        </label>
+                                                    </div>
+                                                    <div class="checkbox">
+                                                        <label>
+                                                            <input type="checkbox" value="">
+                                                            Upoznat/a sam sa <a href=# style="color: #e41913;">uslovima i pravilima poslovanja</a> i prihvatam ih.
+                                                        </label>
+                                                    </div>
+                                                    <div class="checkbox">
+                                                        <label>
+                                                            <input type="checkbox" value="">
+                                                            Nakon što sam se upoznao/upoznala sa navedenim obaveštenjem i isto u potpunosti <br>
+                                                            razumeo/razumela, izjavljujem da dajem pristanak za navedenu obradu podataka o ličnosti
+                                                        </label>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="form-group text-center">
+                                                <button type="submit" class="btn btn-primary">Potvrdi</button>
+                                            </div>
+                                        </form>
+                                    </div>
+                                </div>
                             </div>
                             <div class="tab-pane" id="messages">
-                                3
+
+
+
+
+
+
+
+
+
                             </div>
-                            <div class="tab-pane" id="myShop">
-                                4
+                            <div class="tab-pane" id="myShop">                             
+                                <div class="table table-responsive">
+                                    <table>
+                                        
+                                            <tr>
+                                                <td>
+                                                    1
+                                                </td>
+                                                <td>
+                                                    1
+                                                </td>
+                                                <td>
+                                                    1
+                                                </td>
+                                            </tr>
+                                     
+                                    </table>
+                                </div>
+                              
                             </div>
                         </div>
                     </div>
                 </div>
             </div>
-            
+
+
         </main>
 
         <!-- FOOTER -->
@@ -374,7 +741,7 @@
                 </tfoot>
             </table>
         </div>
-<!-- Modal -->
+        <!-- Modal -->
         <div class="modal fade" id="myModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
             <div class="modal-dialog" role="document">
                 <div class="modal-content">
