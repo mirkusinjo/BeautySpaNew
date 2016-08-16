@@ -205,3 +205,91 @@ form.textReply{
     .user{
         margin-top: 250px;
 }
+/******************************************
+            INFO SHOP
+*****************************************/
+.infoShop{
+    margin-top: 200px;
+}
+.infoShop .form-control:focus {
+    border-color: #6cc515;
+    outline: 0;
+    -webkit-box-shadow: inset 0 1px 1px rgba(0,0,0,.075), 0 0 8px rgba(102, 175, 233, .6);
+    box-shadow: inset 0 1px 1px rgba(0,0,0,.075), 0 0 8px rgba(102, 175, 233, .6);
+}
+.spanLeft{
+    margin-top: 10px;
+   
+}
+.spanTop{
+    margin-top: 10px;
+}
+.spanLeft a{
+    color: #80954a;
+    margin-left: 10px;
+}
+.spanLeft .fa{
+    color: #80954a;
+    
+}
+.infoShop tbody tr{
+    border: none;
+}
+.infoShop .figure{
+    position: relative;
+}
+ .infoShop .badge{
+    position: absolute;
+    top: 100px;
+    left: 15%;
+}
+div.table-responsive > table:nth-child(1) > tbody:nth-child(1) > tr:nth-child(2){
+    border-bottom: 1px solid #ccc;
+}
+
+.primenite{
+    margin-top: 10px;
+    padding: 10px;
+    margin-left: 10px;
+}
+.table1 td{
+    padding-left: 30px;
+}
+.threeModal{
+    border-top: 1px solid #D8D8D8;
+    margin-top: 60px;
+}
+
+.threeModal a{
+    font-size: 10px;
+}
+.adressDelivery{
+    margin-top: 200px;
+}
+.adressDelivery .delivery{
+    padding: 10px;
+}
+.delivery .radio-inline{
+    padding: 15px;
+}
+.delivery td{
+    padding-left: 20px;
+}
+.paymentMetod{
+    margin-top: 200px;
+}
+#accordion a{
+    display: block;
+    color: #6bc513;
+}
+.formF{
+    padding: 20px;
+}
+.reviewOrder{
+    margin-top: 200px;
+}
+.orderPage{
+    border: 1px solid #ccc;
+    padding: 15px;
+}
+}

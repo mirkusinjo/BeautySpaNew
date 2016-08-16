@@ -121,93 +121,195 @@
             </div>
         </header>
         <main>
-            <!--  MAIN START-->
-            <section class="cartShop">
+            <section class="infoShop">
                 <div class="container">
-                    <h2>Vasa Korpa  </h2>
-                
-                <div class="table-responsive">
-                    <table class="shopTable">
-                        <thead> 
-                            <tr> 
-                                <th></th>
-                                <th></th>
-                                <th></th>
-                                <th></th>
-                                <th></th> 
-                                <th</th> 
-                                <th>CENA</th>
-                                <th>KOLICINA</th>
-                                <th>UKUPNO</th> 
-                            </tr>
-                        </thead> 
-                        <tbody>
-                            <tr> 
-                                <td>
-                                    <figure>
-                                        <a href="#"><img src="img/vitamin.png" alt=""/></a>
-                                    </figure>
-                                </td>
-                                <td>
-                                    <p>Lorem ipsum, hsdaihdaijb  daou</p>
-                                    <p>M</p>
-                                    <a href="#"><p>Ukloni</p></a>
-                                </td>
-                                <td></td>
-                                <td></td>
-                                <td></td>
-                                <td>2.690,00 RSD</td>
-                                <td>
-                                    <form>
-                                    <div class="form-group pull-left productQuantity">
-                                        <label></label>
-                                        <div class="input-group">
-                                            <input value="1" type="text">
-                                            <span class="input-group-addon">
-                                                <a class="up"><span class="fa fa-angle-up"></span></a>
-                                                <a class="down"><span class="fa fa-angle-down"></span></a>
-                                            </span>
+                    <div class="row">
+                        <div class="col-md-6">
+                            <form>
+                                <h4>Informacije o kupcu</h4>                                    
+                                <div class="form-group">                                  
+                                    <input type="email" class="form-control" id="exampleInputEmail1" placeholder="Email">
+                                    <p>Vec imate nalog?<a href="#">Prijava</a></p>
+                                </div>
+                                <div>
+                                    <h4>Adresa za dostavu</h4>
+                                </div>
+                                <div class="row">
+                                    <div class="col-md-6">
+                                        <div class="form-group">
+                                            <input type="text" class="form-control" id="exampleInputEmail1" placeholder="Ime">
                                         </div>
                                     </div>
-                                </form>
-                                </td>
-                                <td>2.690,00 RSD</td>
-                            </tr>
-                        </tbody>
-                        <tfoot>
-                            <tr>
-                                <td><a href="#">Napomena</a></td>
-                                <td></td>
-                                <td></td>
-                                <td></td>
-                                <td></td>
-                                <td></td>
-                                <td></td>
-                                <td>Medju zbir 2.690,00</td>      
-                            </tr>
-                            <tr>
-                                <td></td>
-                                <td></td>
-                                <td></td>
-                                <td></td>
-                                <td></td>
-                                <td></td>
-                                <td>
-                                    <button type="button" class="btn btn-primary">Nastavite s kupovinom</button>
-                                </td>
-                                <td>
-                                    <button type="button" class="btn btn-primary">Zakljucenje kupovine</button>
-                                </td>
-                                
-                                
-                            </tr>
-                        </tfoot>
-                    </table>
-                </div>
+                                    <div class="col-md-6">
+                                        <div class="form-group">
+                                            <input type="email" class="form-control" id="exampleInputEmail1" placeholder="Prezime">
+                                        </div>
+                                    </div>
+                                    <div class="col-md-12">
+                                        <div class="form-group">
+                                            <input type="text" class="form-control" id="exampleInputEmail1" placeholder="Kompanija(opciono)">
+                                        </div>
+                                    </div>
+                                    <div class="col-md-12">
+                                        <div class="form-group">
+                                            <input type="text" class="form-control" id="exampleInputEmail1" placeholder="Adresa">
+                                        </div>
+                                    </div>
+                                    <div class="col-md-12">
+                                        <div class="form-group">
+                                            <input type="text" class="form-control" id="exampleInputEmail1" placeholder="Grad">
+                                        </div>
+                                    </div>
+                                    <div class="col-md-6">
+                                        <select class="form-control">
+                                            <option>Drzava</option>
+                                            <option>Srbija</option>
+                                            <option>Kina</option>
+                                            <option>Holandija</option>
+                                            <option>Makedonija</option>
+                                            <option>Italija</option>
+                                        </select>
+                                    </div>
+                                    <div class="col-md-6">
+                                        <div class="form-group">
+                                            <input type="tel" class="form-control" id="exampleInputEmail1" placeholder="Postanski broj">
+                                        </div>
+                                    </div>
+                                    <div class="col-md-12">
+                                        <div class="form-group">
+                                            <input type="tel" class="form-control" id="exampleInputEmail1" placeholder="Telefon">
+                                        </div>
+                                    </div>
+
+                                    <div class="col-md-12">
+                                        <label class="checkbox-inline">
+                                            <input type="checkbox" id="inlineCheckbox1" value="option1"> Sacuvajte informacije za sledeci put
+                                        </label>
+                                    </div>
+
+
+                                    <div class="col-md-6 spanLeft">
+                                        <span class="fa fa-long-arrow-left"><a href="home.html">BACK TO HOME PAGE</a></span>
+                                    </div>
+                                    <div class="col-md-6">
+                                        <button type="button" class="btn btn-primary btn-lg pull-right">Dalje na nacin dostave</button>
+                                    </div>
+                                </div>
+                            </form>
+                            <div class="col-md-12 threeModal">
+                                <div class="row">
+                                    <div class="col-md-4">
+                                        <a href="#" data-toggle="modal" data-target="#myModal2">Privatnost i zastita podataka</a>
+                                    </div>
+                                    <div class="col-md-4">
+                                        <a href="#" data-toggle="modal" data-target="#myModal3">Uslovi za reklamacije i povracaj</a>
+                                    </div>
+                                    <div class="col-md-4">
+                                        <a href="#" data-toggle="modal" data-target="#myModal4">Uslovi koriscenja i kupovine</a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-md-6">
+                            <div class="row">
+                                <div class="col-md-12">
+                                    <div class="table-responsive shopTable">
+                                        <table>
+                                            <tbody>
+                                                <tr> 
+                                                    <td>
+                                                        <figure class="fig">
+                                                            <a href="#"><img src="img/vitamin.png" alt=""/></a>
+                                                        </figure>
+                                                        <span class="badge">1</span>
+                                                    </td>
+                                                    <td>
+                                                        <p>Lorem ipsum, hsdaihdaijb  daou</p>                                              
+                                                    </td>                                    
+                                                    <td>2.690,00 RSD</td>
+                                                </tr>
+                                                <tr> 
+                                                    <td>
+                                                        <figure class="fig">
+                                                            <a href="#"><img src="img/vitamin.png" alt=""/></a>
+                                                        </figure>
+                                                        <span class="badge">2</span>
+                                                    </td>
+                                                    <td>
+                                                        <p>Lorem ipsum, hsdaihdaijb  daou</p>                                               
+                                                    </td>                                    
+                                                    <td>2.690,00 RSD</td>
+                                                </tr>
+                                            </tbody>
+                                        </table>
+                                    </div>
+                                </div>
+                                <div class="col-md-8 primenite">
+                                    <div class="form-group">
+                                        <input type="text" class="form-control" id="exampleInputEmail1" placeholder="Popust">
+                                    </div>
+                                </div>
+                                <div class="col-md-3 primenite">
+                                    <button type="button" class="btn btn-primary btn-lg">Primenite</button>
+                                </div>
+                                <div class="col-md-12">
+                                    <div class="table-responsive ">
+                                        <table class="table1">
+                                            <tbody>
+                                                <tr> 
+                                                    <td>
+                                                        Medju zbir
+                                                    </td>
+                                                    <td></td>  
+                                                    <td></td> 
+                                                    <td></td> 
+                                                    <td></td> 
+                                                    <td></td>
+                                                    <td></td> 
+                                                    <td></td> 
+                                                    <td></td>                                                  
+                                                    <td>8,890.00 RSD</td>                                         
+                                                </tr>
+                                                <tr> 
+                                                    <td>
+                                                        Dostava
+                                                    </td>
+                                                    <td></td>  
+                                                    <td></td> 
+                                                    <td></td> 
+                                                    <td></td>  
+                                                    <td></td> 
+                                                    <td></td> 
+                                                    <td></td>
+                                                    <td></td>                                                  
+                                                    <td class="text-center"><i class="fa fa-minus" aria-hidden="true"></i>
+                                                    </td> 
+                                                </tr>
+                                            </tbody>
+                                            <tfoot>
+                                                <tr> 
+                                                    <td>
+                                                        Ukupno
+                                                    </td>
+                                                    <td></td>  
+                                                    <td></td> 
+                                                    <td></td>
+                                                    <td></td>
+                                                    <td></td>
+                                                    <td></td>
+                                                    <td></td>
+                                                    <td></td>                                            
+                                                    <td>RSD 8,890.00 RSD</td> 
+                                                </tr>
+                                            </tfoot>
+                                        </table>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
                     </div>
+                </div>
             </section>
-
-
         </main>
 
         <!-- FOOTER -->
@@ -419,7 +521,7 @@
                 </tfoot>
             </table>
         </div>
-        <!-- Modal -->
+        <!-- Modal 1-->
         <div class="modal fade" id="myModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
             <div class="modal-dialog" role="document">
                 <div class="modal-content">
@@ -429,6 +531,94 @@
                     </div>
                     <div class="modal-body">
                         <h4>Insert second title here</h4>
+                        <p>
+                            Cras mattis consectetur purus sit amet fermentum. Cras 
+                            justo odio, dapibus ac facilisis in, egestas eget quam. 
+                            Morbi leo risus, porta ac consectetur ac, vestibulum at eros
+                        </p>
+                        <p>
+                            Cras mattis consectetur purus sit amet fermentum. Cras 
+                            justo odio, dapibus ac facilisis in, egestas eget quam. 
+                            Morbi leo risus, porta ac consectetur ac, vestibulum at eros
+                        </p>
+                    </div>
+                    <div class="modal-footer">
+                        <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- Modal end-->
+
+
+        <!-- Modal Start USLOVI KORISCENjA-->
+        <div class="modal fade" id="myModal2" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
+            <div class="modal-dialog" role="document">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+                        <h3 class="modal-title" id="myModalLabel">Zastita podataka</h3>
+                    </div>
+                    <div class="modal-body">
+                        <h4>Lorem ipsum</h4>
+                        <p>
+                            Cras mattis consectetur purus sit amet fermentum. Cras 
+                            justo odio, dapibus ac facilisis in, egestas eget quam. 
+                            Morbi leo risus, porta ac consectetur ac, vestibulum at eros
+                        </p>
+                        <p>
+                            Cras mattis consectetur purus sit amet fermentum. Cras 
+                            justo odio, dapibus ac facilisis in, egestas eget quam. 
+                            Morbi leo risus, porta ac consectetur ac, vestibulum at eros
+                        </p>
+                    </div>
+                    <div class="modal-footer">
+                        <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- Modal end-->
+        
+        
+        <!-- Modal Start-->
+        <div class="modal fade" id="myModal3" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
+            <div class="modal-dialog" role="document">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+                        <h3 class="modal-title" id="myModalLabel">Uslovi za reklamacije i povracaj</h3>
+                    </div>
+                    <div class="modal-body">
+                        <h4>Lorem ipsum</h4>
+                        <p>
+                            Cras mattis consectetur purus sit amet fermentum. Cras 
+                            justo odio, dapibus ac facilisis in, egestas eget quam. 
+                            Morbi leo risus, porta ac consectetur ac, vestibulum at eros
+                        </p>
+                        <p>
+                            Cras mattis consectetur purus sit amet fermentum. Cras 
+                            justo odio, dapibus ac facilisis in, egestas eget quam. 
+                            Morbi leo risus, porta ac consectetur ac, vestibulum at eros
+                        </p>
+                    </div>
+                    <div class="modal-footer">
+                        <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- Modal end-->
+        <!-- Modal Start-->
+        <div class="modal fade" id="myModal4" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
+            <div class="modal-dialog" role="document">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+                        <h3 class="modal-title" id="myModalLabel">Uslovi koriscenja i kupovine</h3>
+                    </div>
+                    <div class="modal-body">
+                        <h4>Lorem ipsum</h4>
                         <p>
                             Cras mattis consectetur purus sit amet fermentum. Cras 
                             justo odio, dapibus ac facilisis in, egestas eget quam. 

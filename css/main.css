@@ -1243,14 +1243,15 @@ thead tr{
  border-bottom: 1px solid black;
 }
 tbody tr{
-    border-bottom: 1px solid black;
+    border-bottom: 1px solid #ccc;
 }
 .cartShop .shopTable th{
     padding: 50px;
     
 }
 .shopTable td{
-    padding: 30px;
+    padding: 20px;
+    
 }
 
 .shopTable figure{
