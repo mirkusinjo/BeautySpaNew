@@ -63,6 +63,32 @@
     .categories{
         padding: 10px;
     }
+    .delivery{
+        padding: 20px;
+    }
+    .delivery td{
+        padding: 20px;
+    }
+    .table1{
+        width: 100%;
+    }
+    .table1 .tableR{
+        float: right;
+    }
+    .table1 td{
+        padding: 5px;
+    }
+    .spanLeft{
+        padding: 10px;
+      
+    }
+    .threeModal{
+        margin-top: 20px;
+        
+    }
+    .deliveryA{
+        margin-top: 110px;
+    }
 
     .about-picture .about-hover {
         position: absolute;
@@ -180,6 +206,17 @@
 }
 .error-1{
     margin-top: 50px;
+}
+.paymentMetod{
+    margin-top: 110px;
+}
+.paymentMetod .panel-title a{
+    display: block;
+    outline: none;
+    text-decoration: none;
+}
+.formF{
+    display: none;
 }
 }
 
@@ -524,4 +561,7 @@
 .error .error-1 .fa{
     color: #80954a;
 }
+.deliveryA{
+        margin-top: 0;
+    }
 }

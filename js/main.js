@@ -97,5 +97,13 @@ $(document).ready(function () {
     //form
     $('.html_form').validator();
     $('.html_form2').validator();
+    
+    $('.secondAdress').click(function(){
+      $('.formF').show();  
+    });
+    //DELIVERY OPTION SHOW-HIDE
+     $('.firstAdress').click(function(){
+      $('.formF').hide();  
+    });
 });
 
