@@ -674,9 +674,7 @@ section.source p a:hover {
     line-height: 35px;
     font-size: 20px !important;
 }
-.newsletter span.input-group-btn {
-    padding-top: 25px;
-}
+
 .newsletter .btn{
     border-radius: 0;
     border: 1px solid #303030;
@@ -1203,7 +1201,7 @@ background: rgb(108, 197, 21) none repeat scroll 0% 0%;
    font-size: 20px;
 }
 div.input-group:nth-child(2) > input:nth-child(1){
-    width: 50px;
+    width: 100%;
 text-align: center;
 }
 .input-group-addon{
@@ -1245,10 +1243,7 @@ thead tr{
 tbody tr{
     border-bottom: 1px solid #ccc;
 }
-.cartShop .shopTable th{
-    padding: 50px;
-    
-}
+
 .shopTable td{
     padding: 20px;
     

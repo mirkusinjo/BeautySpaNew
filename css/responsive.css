@@ -63,9 +63,7 @@
     .categories{
         padding: 10px;
     }
-    .delivery{
-        padding: 20px;
-    }
+    
     .delivery td{
         padding: 20px;
     }
@@ -218,6 +216,7 @@
 .formF{
     display: none;
 }
+
 }
 
 /* Medium devices (desktops, 992px and up) */
@@ -235,13 +234,13 @@
     .newsletter .input-group .form-control {
         float: right;
         width: 50%;
-        margin-top: 30px;
+        margin-top: 6px;
     }
     .newsletter .btn{
         margin-top: 5px;
     }
     .newsletter label {
-        margin-top: 35px;
+        margin-top: 0px;
         padding-left: 200px;
     }
 
@@ -564,4 +563,8 @@
 .deliveryA{
         margin-top: 0;
     }
+    .cartShop{
+        margin-top: 180px;
+    }
+    
 }
