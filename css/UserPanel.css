@@ -232,13 +232,12 @@ form.textReply{
 .login{
     left: -100px;
 }
+
 }
 
 /* Medium devices (desktops, 992px and up) */
 @media (min-width: 992px) { 
-    .user{
-        margin-top: 200px;
-    }
+     
     .user h3{
         margin-top: -30px;
     }
@@ -262,7 +261,7 @@ form.textReply{
 /* Large devices (large desktops, 1200px and up) */
 @media (min-width: 1200px) { 
     .user{
-        margin-top: 10px;
+        margin-top: 210px;
     }
     /******************************************
                 INFO SHOP
@@ -346,6 +345,9 @@ form.textReply{
     .threeModal a{
         font-size: 10px;
     }
+    .adressDelivery{
+        margin-top: 200px;
+    }
    
     .adressDelivery .delivery{
         padding: 10px;
@@ -373,10 +375,23 @@ form.textReply{
     .deliveryA{
     margin-top: 0px;
 }
+.deliveryOption{
+    margin-top: 30px;
+}
+}
 /******************************************
-               END 120px
+               END 1200px
     *****************************************/
 
+.adressDelivery{
+    margin-top: 100px;
+}
+.deliveryOption{
+    margin-top: 20px;
+}
+.deliveryOption form{
+    border: 1px solid #ddd;
+   
 }
 .paymentM{
     margin-top: 30px;
@@ -395,6 +410,17 @@ form.textReply{
 }
 .primenite{
     margin-top: 10px;
+}
+.user{
+    margin-top: 100px;
+}
+.adressDelivery a.btn {
+    text-decoration: none;
+    color: #fff;
+    border: 1px solid #6cc513;
+    border-radius: 5px;
+    background: #6cc513;
+    padding: 5px 10px;
 }
 
 

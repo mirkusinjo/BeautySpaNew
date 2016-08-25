@@ -19,8 +19,9 @@
         <link rel="stylesheet" href="//code.jquery.com/ui/1.12.0/themes/base/jquery-ui.css">
         <link rel="stylesheet" href="/resources/demos/style.css">
         <link rel="stylesheet" href="css/main.css">
-        <link href="css/responsive.css" rel="stylesheet" type="text/css"/>
         <link href="css/UserPanel.css" rel="stylesheet" type="text/css"/>
+        <link href="css/responsive.css" rel="stylesheet" type="text/css"/>
+
         <link href="css/hover.css" rel="stylesheet" type="text/css"/>
         <script src="js/vendor/modernizr-2.8.3-respond-1.4.2.min.js"></script>
     </head>
@@ -138,25 +139,29 @@
                                     <p>Telefon</p>
                                     <a href="#">Azurirajte adresu za dostavu</a>
                                 </div> 
-                                <div class="col-md-12 col-sm-6 delivery">
+                                <div class=" col-md-12 deliveryOption">
                                     <h4>Nacin dostave</h4>
-                                    <table>
-                                        <tbody style="border: 1px solid black;">
-                                            <tr>
-                                                <td>
-                                                    <label class="radio-inline"><input type="radio" name="optradio">Besplatno slanje kurirskom sluzbom</label>
-                                                </td>                                              
-                                                <td>FREE</td>
-                                            </tr>
-                                        </tbody>
-                                    </table>
+                                    <form>
+                                        <div class="radio">
+                                            <label>
+                                                <input type="radio" name="Isporuka" value="Kurirska sluzba" checked>
+                                                Besplatno slanje kurirskom službom
+                                            </label>
+                                        </div>
+                                        <div class="radio">
+                                            <label>
+                                                <input type="radio" name="Isporuka" value="Brza posta" checked>
+                                                Slanje brzom poštom i plaćanje pouzećem
+                                            </label>
+                                        </div>
+                                    </form>
                                 </div>
                                 <div class="row">
                                     <div class="col-md-6 col-sm-6 spanLeft">
                                         <span class="fa fa-long-arrow-left"><a href="home.html">Nazad na informacije o kupcu</a></span>
                                     </div>
                                     <div class="col-md-6 col-sm-6">
-                                        <button type="button" class="btn btn-primary btn-lg">Dalje na nacin placanja</button>
+                                        <a type="button" class="btn btn-primary btn-lg pull-right">Dalje na nacin placanja</a>
                                     </div>
                                 </div>
 

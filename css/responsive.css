@@ -43,7 +43,7 @@
         margin-top: 45px;
     }
     .logPg{
-        margin-top: 40px;
+        margin-top: 100px;
     }
     .plashOil{
         margin-top: 30px;
@@ -75,10 +75,16 @@
     .table1 td{
         padding: 5px;
     }
-    .spanLeft{
-        padding: 10px;
-      
-    }
+    .adressDelivery a.btn {
+    text-decoration: none;
+    color: #fff;
+    border: 1px solid #6cc513;
+    border-radius: 5px;
+    background: #6cc513;
+    padding: 5px 10px;
+    font-size: 12px;
+    margin-top: -25px;
+}
     .threeModal{
         margin-top: 20px;
         
@@ -175,11 +181,16 @@
         background-size: cover;
     }
     .twelve{
-        display: block;
+        display: none;
     }
     .twelve-p{
         display: block;
     }
+    .stars {
+    position: absolute;
+    top: 12%;
+    left: 70%;
+}
     .registration ul {
         padding-left: 35%;
     }
@@ -228,7 +239,16 @@
         display: none;
         opacity: 0.5;
     }
-
+    .deliveryOption form{
+        border: none;
+    }
+    .threeModal{
+        margin-top: 60px;
+    }
+    .popReg{
+        margin-top: 120px;
+    }
+   
 }
 
 /* Medium devices (desktops, 992px and up) */
@@ -291,7 +311,14 @@
     .filtersSelect{
         display: block;
     }
-
+.user{
+        margin-top: 210px;
+    }
+    .adressDelivery form {
+    border: 1px solid #e8e8e8;
+    padding: 10px;
+    margin-bottom: 30px;
+}
 }
 
 /* Large devices (large desktops, 1200px and up) */
@@ -302,6 +329,10 @@
     .navbar{
         padding: 40px 0;
     }
+    #inputMail{
+    padding: 6px;
+    margin-top: 6px;
+}
     .navbar-default .navbar-nav > li > a{
         padding-right: 50px;
     }
@@ -528,7 +559,7 @@
         margin-left: 10px;
     }
     .popReg{
-        margin-top: 0;
+        margin-top: 200px;
     }
     .pass input{
         height: 40px;
@@ -581,5 +612,31 @@
  .twelve{
         display: none;
     }
+    .adressDelivery{
+        margin-top: 190px;
+    }
+     .adressDelivery a.btn {
+    text-decoration: none;
+    color: #fff;
+    border: 1px solid #6cc513;
+    border-radius: 5px;
+    background: #6cc513;
+    padding: 5px 10px;
+    font-size: 12px;
+    margin-top: 0px;
+}
+.infoShop a.btn {
+    text-decoration: none;
+    color: #fff;
+    border: 1px solid #6cc513;
+    border-radius: 5px;
+    background: #6cc513;
+    padding: 5px 10px;
+    font-size: 12px;
+    margin-top: 0px;
+}
+.logPg{
+    margin-top: 200px;
+}
 }
 
