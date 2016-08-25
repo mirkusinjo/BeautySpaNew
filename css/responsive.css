@@ -4,6 +4,7 @@
     main{
         margin-top: 0;
     }
+    
     .headerTop{
         padding: 10px 0;
     }
@@ -67,9 +68,7 @@
     .delivery td{
         padding: 20px;
     }
-    .table1{
-        width: 100%;
-    }
+   
     .table1 .tableR{
         float: right;
     }
@@ -190,6 +189,8 @@
     .tab-content{
         margin-top: 20px;
     }
+    
+
     .error h1{
     font-size: 150px;
     color: #fd6804;
@@ -205,9 +206,7 @@
 .error-1{
     margin-top: 50px;
 }
-.paymentMetod{
-    margin-top: 110px;
-}
+
 .paymentMetod .panel-title a{
     display: block;
     outline: none;
@@ -216,6 +215,19 @@
 .formF{
     display: none;
 }
+ .about-picture figure{
+        position: relative;
+    }
+    .about-picture .about-hover {
+        position: absolute;
+        width: 70%;
+        height: 90%;
+        top: 5%;
+        left: 15%;
+        background: #95cf5b;
+        display: none;
+        opacity: 0.5;
+    }
 
 }
 
@@ -250,7 +262,9 @@
     footer .contact{
         margin-top: -15px;
     }
-
+    .about-picture figure{
+        position: relative;
+    }
     .about-picture .about-hover {
         position: absolute;
         width: 70%;
@@ -456,11 +470,11 @@
         background: url('style-images/world-map.png') no-repeat center center;
         padding: 100px;
     }
-    .stars {
-        position: absolute;
-        top: 15%;
-        left: 70%;
-    }
+   .stars {
+    position: absolute;
+    top: 36px;
+    left: 65%;
+}
     .fa-refresh,  .fa-heart-o{
         font-size: 20px;
 
@@ -493,9 +507,7 @@
         background-color: rgba(0,0,0,0.8);
         background-size: cover;
     }
-    .logPg{
-        margin-top: 200px;
-    }
+   
     .logIn{
         margin-top: 130px;
         padding: 50px;
@@ -516,7 +528,10 @@
         margin-left: 10px;
     }
     .popReg{
-        margin-top: 12%;
+        margin-top: 0;
+    }
+    .pass input{
+        height: 40px;
     }
     .registration {
         margin-top: 10%;
@@ -563,8 +578,8 @@
 .deliveryA{
         margin-top: 0;
     }
-    .cartShop{
-        margin-top: 180px;
+ .twelve{
+        display: none;
     }
-    
 }
+

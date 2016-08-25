@@ -21,6 +21,7 @@
         <link rel="stylesheet" href="css/main.css">
         <link href="css/responsive.css" rel="stylesheet" type="text/css"/>
         <link href="css/UserPanel.css" rel="stylesheet" type="text/css"/>
+        <link href="css/hover.css" rel="stylesheet" type="text/css"/>
         <script src="js/vendor/modernizr-2.8.3-respond-1.4.2.min.js"></script>
     </head>
     <body>
@@ -79,8 +80,8 @@
             <div class="line"></div>
 
             <!-- NAVIGATION -->
-            <div class="container myNav">
-                <nav class="navbar navbar-default navDrop">
+            <div class="container">
+                <nav class="navbar navbar-default">
                     <div class="container-fluid">
                         <!-- Brand and toggle get grouped for better mobile display -->
                         <div class="navbar-header">
@@ -98,22 +99,22 @@
                         <!-- Collect the nav links, forms, and other content for toggling -->
                         <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
 
-                            <ul class="nav navbar-nav navbar-right  dropShop">
-                                <li><a href="#" class="text-uppercase">HOME</a></li>
-                                <li><a href="#" class="text-uppercase" data-toggle="modal" data-target="#myModal">PAGES</a></li>
+                            <ul class="nav navbar-nav navbar-right">
+                                <li><a href="#" class="text-uppercase hvr-wobble-horizontal">HOME</a></li>
+                                <li><a href="#" class="text-uppercase hvr-wobble-horizontal" data-toggle="modal" data-target="#myModal">PAGES</a></li>
                                 <li class="dropdown">
-                                    <a href="#" class="dropdown-toggle text-uppercase" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">
+                                    <a href="#" class="dropdown-toggle hvr-wobble-horizontal text-uppercase" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">
                                         SHOP<span class="caret" style="color:#6cc513;"></span>
                                     </a>
                                     <ul class="dropdown-menu dropSpa">
-                                        <li><a href="#">SPA WOMEN</a></li>
-                                        <li><a href="#">SPA MEN</a></li>
-                                        <li><a href="#">SPA ALL</a></li>
+                                        <li><a href="#" class="hvr-buzz-out">SPA WOMEN</a></li>
+                                        <li><a href="#" class="hvr-buzz-out">SPA MEN</a></li>
+                                        <li><a href="#" class="hvr-buzz-out">SPA ALL</a></li>
                                     </ul>
                                 </li>
-                                <li><a href="#" class="text-uppercase">GALERY</a></li>
-                                <li><a href="#" class="text-uppercase">CONTACT</a></li>
-                                <li class="shopingCart"><a href="#"><span class="fa fa-shopping-cart"></span><span class="badge">02</span></a></li>
+                                <li><a href="#" class="text-uppercase hvr-wobble-horizontal">GALERY</a></li>
+                                <li><a href="#" class="text-uppercase hvr-wobble-horizontal">CONTACT</a></li>
+                                <li class="shopingCart"><a href="#" class="hvr-float-shadow"><span class="fa fa-shopping-cart"></span><span class="badge">02</span></a></li>
                             </ul>
                         </div><!-- /.navbar-collapse -->
                     </div><!-- /.container-fluid -->
@@ -129,7 +130,7 @@
                             <h4>Pregled porudzbine</h4>
                             <div class="row orderPage">
                                 
-                                <div class="col-md-6 ">
+                                <div class="col-md-6 col-sm-6">
                                     <h4>Adresa za dostavu</h4>
                                     <p>Ime Prezime</p>
                                     <p>Kompanija</p>
@@ -144,7 +145,7 @@
                                     <a href="#">Azurirajte nacin dostave</a>
                                 </div>
                                 
-                                <div class="col-md-6">
+                                <div class="col-md-6 col-sm-6">
                                      
                                     <h4>Adresa za racun</h4>
                                     <p>Ime Prezime</p>
@@ -218,49 +219,28 @@
                                         <table class="table1">
                                             <tbody>
                                                 <tr> 
-                                                    <td>
+                                                    <td class="left">
                                                         Medju zbir
                                                     </td>
-                                                    <td></td>  
-                                                    <td></td> 
-                                                    <td></td> 
-                                                    <td></td> 
-                                                    <td></td>
-                                                    <td></td> 
-                                                    <td></td> 
-                                                    <td></td>                                                  
-                                                    <td>8,890.00 RSD</td>                                         
+                                                    <td></td>                                         
+                                                    <td class="tableR">8,890.00 RSD</td>                                         
                                                 </tr>
                                                 <tr> 
-                                                    <td>
+                                                    <td class="left">
                                                         Dostava
                                                     </td>
-                                                    <td></td>  
-                                                    <td></td> 
-                                                    <td></td> 
-                                                    <td></td>  
-                                                    <td></td> 
-                                                    <td></td> 
-                                                    <td></td>
-                                                    <td></td>                                                  
-                                                    <td class="text-center"><i class="fa fa-minus" aria-hidden="true"></i>
+                                                        <td></td>                                            
+                                                    <td class="tableR"><i class="fa fa-minus" aria-hidden="true"></i>
                                                     </td> 
                                                 </tr>
                                             </tbody>
                                             <tfoot>
                                                 <tr> 
-                                                    <td>
+                                                    <td class="left">
                                                         Ukupno
                                                     </td>
-                                                    <td></td>  
-                                                    <td></td> 
-                                                    <td></td>
-                                                    <td></td>
-                                                    <td></td>
-                                                    <td></td>
-                                                    <td></td>
-                                                    <td></td>                                            
-                                                    <td>RSD 8,890.00 RSD</td> 
+                                                   <td></td>                                             
+                                                    <td class="tableR">RSD 8,890.00 RSD</td> 
                                                 </tr>
                                             </tfoot>
                                         </table>
