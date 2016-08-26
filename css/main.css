@@ -1072,6 +1072,9 @@ ul.filter li ul{
 .contact-info article{
     padding: 10px;
 }
+.Contact{
+    margin-top: 80px;
+}
 .fa {
     display: inline-block;
     font: normal normal normal 14px/1 FontAwesome;
@@ -1260,15 +1263,18 @@ text-align: center;
     margin-top: 150px;
 }
 thead tr{
- border-bottom: 1px solid black;
+ border-bottom: 1px solid #ccc;
 }
 tbody tr{
     border-bottom: 1px solid #ccc;
 }
 
 .shopTable td{
-    padding: 20px;
+    padding: 10px;
     
+}
+div.col-md-3:nth-child(3) > button:nth-child(1){
+    margin-bottom: 10px;
 }
 
 .shopTable figure{
@@ -1323,4 +1329,10 @@ margin-top: 10px;
 }
 .logPg #inputMail{
     margin-top: 0;
+}
+.paymentMetod{
+    margin-top: 100px;
+}
+.reviewOrder{
+    margin-top: 120px;
 }
